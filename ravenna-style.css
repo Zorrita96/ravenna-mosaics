@@ -60,3 +60,10 @@
     height: 35px;
     align-items: center;
   }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: center;
+  }
