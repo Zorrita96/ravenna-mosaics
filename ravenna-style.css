@@ -16,4 +16,47 @@
     cursor: pointer;
   }
 
-  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 40px;
+    padding: 0px 20px;
+    background-color: white;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  header > ul, nav > ul {
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 0;
+  }
+
+  #language > li {
+      padding: 20px;
+  }
+
+  .nav-link {
+    padding: 20px 30px;
+    color: black;
+    display: flex;
+    height: 35px;
+    align-items: center;
+  }
