@@ -106,3 +106,23 @@
     height: 100vh;
     padding: 70px 30px 30px 30px;
   }
+
+  #linkbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 40px;
+  }
+
+  .icon {
+    font-size: 7em;
+    margin: 20px;
+    background-color: white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
