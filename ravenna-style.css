@@ -67,3 +67,42 @@
     margin-top: 40px;
     text-align: center;
   }
+
+  h1 {
+    font-size: 3.5em;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+  }
+  
+  h3 {
+    font-size: 2em;
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    align-items: center;
+    height: 100vh;
+    padding: 70px 30px 30px 30px;
+  }
+
+  #book {
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+    align-items: center;
+    height: 100vh;
+    padding: 70px 30px 30px 30px;
+  }
+
+  #author {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgreen;
+    align-items: center;
+    height: 100vh;
+    padding: 70px 30px 30px 30px;
+  }
