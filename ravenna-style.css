@@ -89,9 +89,10 @@
   #home {
     display: flex;
     flex-direction: column;
-    background-image: url("../ravenna-mosaics/ravenna-images/001-home.jpg");
+    background-image: url("../ravenna-mosaics/ravenna-images/001-home_1.jpg");
     background-color: lightgray;
-    background-size: cover;
+    background-position: center;
+    background-size: 120%;
     align-items: center;
     height: 100vh;
     padding: 70px 30px 30px 30px;
