@@ -4,6 +4,12 @@
   
   body {
     background-color: #e2e2e2;
+    font-family: 'Cormorant Infant', serif;
+    /*font-family: 'Playfair Display', serif;
+    font-family: 'Prata', serif;
+    font-family: 'Playfair Display SC', serif;
+    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant SC', serif;*/
     font-size: 10px;
     color: black;
     width: 100%;
