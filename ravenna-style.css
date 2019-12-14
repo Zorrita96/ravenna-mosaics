@@ -93,9 +93,15 @@
     background-color: lightgray;
     background-position: center;
     background-size: 120%;
+    opacity: 0.5;
     align-items: center;
     height: 100vh;
+    color: white;
     padding: 70px 30px 30px 30px;
+  }
+
+  .title {
+    width: 50%;
   }
 
   #book {
