@@ -95,6 +95,10 @@ header {
     font-size: 2em;
   }
 
+  section {
+    padding: 40px 80px;
+  }
+
   .home {
     display: flex;
     flex-direction: column;
@@ -130,18 +134,18 @@ header {
     margin: 0;
   }
 
-  #book {
+  .book {
     display: flex;
     flex-direction: row;
     background-color: white;
     align-items: center;
     height: 100vh;
-    padding: 70px 30px 30px 30px;
+    /*padding: 70px 30px 30px 30px;*/
   }
 
   .book-cover {
     min-width: 30%;
-    margin: 20px 40px;
+    /*margin: 20px 40px;*/
   }
 
   img {
@@ -153,7 +157,8 @@ header {
     font-weight: bold;
     text-align: justify;
     color: var(--brown);
-    margin: 20px 40px 20px 0;
+    margin-right: 30px;
+    /*margin: 20px 40px 20px 0;*/
   }
 
   #author {
