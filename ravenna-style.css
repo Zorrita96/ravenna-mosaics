@@ -43,48 +43,48 @@ header {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-  nav {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
+nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
-  header > ul, nav > ul {
-    font-size: 2em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
+header > ul, nav > ul {
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
 
-  #language > li {
-    padding: 20px;
-  }
+#language > li {
+  padding: 20px;
+}
 
-  .nav-link {
-    padding: 20px 30px;
-    color: black;
-    display: flex;
-    height: 35px;
-    align-items: center;
-  }
+.nav-link {
+  padding: 20px 30px;
+  color: black;
+  display: flex;
+  height: 35px;
+  align-items: center;
+}
 
-  a.nav-link:hover {
-    background-color: rgb(85, 51, 0);
-    color: white;
-    transition: 0.5s;
-  }
+a.nav-link:hover {
+  background-color: rgb(85, 51, 0);
+  color: white;
+  transition: 0.5s;
+}
 
-  main {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
-  h1 {
-    font-size: 3.5em;
-  }
+h1 {
+  font-size: 3.5em;
+}
   
   /*h2 {
     font-size: 2.5em;
@@ -176,13 +176,25 @@ header {
     margin-left: 30px;
   }
 
-  #linkbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 40px;
-  }
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  /*background-image: url(../ravenna-mosaics/ravenna-images/020-forzas-2.jpg);
+  background-position: center;
+  background-size: cover;*/
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#linkbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 40px;
+}
 
   .icon {
     font-size: 7em;
