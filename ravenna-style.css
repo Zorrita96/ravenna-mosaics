@@ -55,7 +55,6 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /*background-color: gray;*/
     margin: 0;
   }
 
@@ -95,6 +94,10 @@ header {
     font-size: 2em;
   }
 
+  section {
+    padding: 40px 80px;
+  }
+
   .home {
     display: flex;
     flex-direction: column;
@@ -130,18 +133,16 @@ header {
     margin: 0;
   }
 
-  #book {
+  .book {
     display: flex;
     flex-direction: row;
     background-color: white;
     align-items: center;
     height: 100vh;
-    padding: 70px 30px 30px 30px;
   }
 
   .book-cover {
     min-width: 30%;
-    margin: 20px 40px;
   }
 
   img {
@@ -153,28 +154,26 @@ header {
     font-weight: bold;
     text-align: justify;
     color: var(--brown);
-    margin: 20px 40px 20px 0;
+    margin-right: 30px;
   }
 
-  #author {
+  .author {
     display: flex;
     flex-direction: row;
-    background-color: rgba(85, 58, 0, 0.6);
+    background-color: rgba(99, 67, 0, 0.6);
     align-items: center;
     height: 100vh;
-    padding: 70px 30px 30px 30px;
   }
 
   .avatar {
     min-width: 50%;
-    margin: 20px 40px;
   }
 
   .author-description {
     font-size: 2.3em;
     text-align: justify;
     color: white;
-    margin: 20px 40px 20px 0;
+    margin-left: 30px;
   }
 
   #linkbar {
