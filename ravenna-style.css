@@ -188,6 +188,10 @@ h1 {
   height: 100vh;
 }
 
+.contacts h3 {
+  font-size: 3em;
+}
+
 #linkbar {
   display: flex;
   flex-wrap: wrap;
@@ -199,6 +203,13 @@ h1 {
 .social {
   width: 30%;
   background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social p {
+  font-size: 2em;
 }
 
 .icon {
