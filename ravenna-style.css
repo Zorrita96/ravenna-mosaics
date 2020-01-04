@@ -200,6 +200,12 @@ h1 {
 }
 
 .contacts h3 {
+  font-size: 4em;
+  color: white;
+}
+
+.contacts p {
+  color: white;
   font-size: 3em;
 }
 
@@ -208,19 +214,20 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 50px 40px;
+  margin: 0;
 }
 
 .social {
-  width: 30%;
-  background-color: gray;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 15px;
 }
 
 .social p {
   font-size: 2em;
+  color: white;
+  margin: 0;
 }
 
 .icon {
