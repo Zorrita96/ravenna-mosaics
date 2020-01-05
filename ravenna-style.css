@@ -184,6 +184,20 @@ h1 {
   height: 100vh;
 }
 
+.datelist {
+  text-align: left;
+  font-size: 2em;
+  list-style-type: none;
+}
+
+.datelist li {
+  background-image: url(../ravenna-mosaics/ravenna-images/bullet.jpg);
+  background-repeat: no-repeat;
+	background-position: left top;
+  background-size: 40px;
+  padding: 0 0 30px 50px;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
