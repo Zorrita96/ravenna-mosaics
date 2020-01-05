@@ -181,7 +181,13 @@ h1 {
   flex-direction: column;
   background-color: white;
   align-items: center;
-  height: 100vh;
+  color: var(--brown);
+}
+
+.timetable h3 {
+  font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .afisha {
@@ -194,15 +200,34 @@ h1 {
   text-align: left;
   font-size: 2em;
   list-style-type: none;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .datelist li {
   background-image: url(../ravenna-mosaics/ravenna-images/bullet.jpg);
   background-repeat: no-repeat;
 	background-position: left top;
-  background-size: 40px;
+  background-size: 50px;
   padding: 0 0 30px 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.date {
+  margin: 0 20px 0 10px;
+  padding: 5px;
+  background-color: rgb(85, 51, 0);;
+  min-width: 150px;
+  height: 55px;
+  color: white;
+}
+
+.event {
+  font-size: 1.2em;
+}
+
+.event a {
+  text-decoration: underline;
 }
 
 .contacts {
