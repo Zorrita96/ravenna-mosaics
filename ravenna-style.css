@@ -204,10 +204,10 @@ h1 {
 }
 
 .datelist li {
-  background-image: url(../ravenna-mosaics/ravenna-images/bullet.jpg);
+  /*background-image: url(../ravenna-mosaics/ravenna-images/bullet.jpg);
   background-repeat: no-repeat;
 	background-position: left top;
-  background-size: 50px;
+  background-size: 50px;*/
   padding: 0 0 30px 50px;
   display: flex;
   flex-direction: row;
