@@ -3,7 +3,7 @@
 }
 
 :root {
-  --brown: rgb(85, 51, 0);
+  --brown: rgb(59, 42, 17);
 }
   
 body {
@@ -204,26 +204,40 @@ h1 {
 }
 
 .datelist li {
-  /*background-image: url(../ravenna-mosaics/ravenna-images/bullet.jpg);
-  background-repeat: no-repeat;
-	background-position: left top;
-  background-size: 50px;*/
-  padding: 0 0 30px 50px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
 }
 
+.flag {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background: linear-gradient(90deg, rgba(59,42,17,1) 65%, rgba(59,42,17,0.7) 80%, rgba(59,42,17,0.45) 90%, rgba(255,255,255,0) 100%);
+  min-width: 250px;
+  height: 70px;
+  padding: 5px 0;
+  border-radius: 3%;
+}
+
+.bullet {
+  background-image: url(../ravenna-mosaics/ravenna-images/bullet.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  background-size: 50px;
+  width: 50px;
+  margin-left: 7px;
+}
+
 .date {
-  margin: 0 20px 0 10px;
+  margin-left: 10px;
   padding: 5px;
-  background-color: rgb(85, 51, 0);;
-  min-width: 150px;
-  height: 55px;
   color: white;
 }
 
 .event {
   font-size: 1.2em;
+  padding-left: 20px;
 }
 
 .event a {
@@ -234,9 +248,6 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: lightgray;
-  /*background-image: url(../ravenna-mosaics/ravenna-images/020-forzas-2.jpg);
-  background-position: center;
-  background-size: cover;*/
   justify-content: center;
   align-items: center;
   height: 100vh;
