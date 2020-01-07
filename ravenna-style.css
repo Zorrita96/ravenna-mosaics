@@ -4,6 +4,8 @@
 
 :root {
   --brown: rgb(85, 51, 0);
+  --golden: rgb(240, 218, 146);
+  --darkblue: rgb(13, 12, 25);
 }
   
 body {
@@ -201,7 +203,7 @@ h1 {
 
 .contacts h3 {
   font-size: 4em;
-  color: white;
+  color: var(--golden);
 }
 
 .contacts p {
@@ -233,7 +235,8 @@ h1 {
 .icon {
   font-size: 7em;
   margin: 20px;
-  background-color: white;
+  color: var(--darkblue);
+  background-color: var(--golden);
   border-radius: 50%;
   width: 120px;
   height: 120px;
