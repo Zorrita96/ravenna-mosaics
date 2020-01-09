@@ -140,7 +140,7 @@ h1 {
     flex-direction: row;
     background-color: white;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .book-cover {
@@ -164,7 +164,7 @@ h1 {
     flex-direction: row;
     background-color: rgba(99, 67, 0, 0.6);
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .avatar {
