@@ -316,6 +316,7 @@ h1 {
 footer {
   display: flex;
   text-align: center;
+  justify-content: flex-end;
   font-size: 1.7em;
   padding: 5px 40px;
   background: var(--darkblue);
