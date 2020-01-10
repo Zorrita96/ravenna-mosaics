@@ -343,9 +343,9 @@ img {
   display: flex;
   flex-direction: column;
   background-color: lightgray;
-  background-image: url(../ravenna-mosaics/ravenna-images/020-forzas-2-vertical.jpg);
-  background-position: left;
-  background-size: 50vw;
+  background-image: url(../ravenna-mosaics/ravenna-images/020-forzas-2-double.jpg);
+  background-position: center;
+  background-size: 100%;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -417,8 +417,10 @@ img {
   }
 }
 
-@media (max-width: 800px) {
-  
+@media (max-width: 860px) {
+  .contacts {
+    background-size: cover;
+  }
   
   /*#linkbar {
     flex-direction: column;
