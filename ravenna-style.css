@@ -11,11 +11,6 @@
 body {
   background-color: #e2e2e2;
   font-family: 'Cormorant Infant', serif;
-  /*font-family: 'Playfair Display', serif;
-  font-family: 'Prata', serif;
-  font-family: 'Playfair Display SC', serif;
-  font-family: 'Cormorant', serif;
-  font-family: 'Cormorant SC', serif;*/
   font-size: 10px;
   color: black;
   width: 100%;
@@ -51,6 +46,17 @@ nav {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  header {
+    justify-content: center;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
 nav > ul {
   font-size: 2em;
   display: flex;
@@ -60,16 +66,24 @@ nav > ul {
   margin: 0;
 }
 
-#language > li {
-  padding: 20px;
-}
-
 .nav-link {
   padding: 20px 30px;
   color: black;
   display: flex;
   height: 35px;
   align-items: center;
+}
+
+@media (max-width: 750px) {
+  .nav-link {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-link {
+    padding: 20px 10px;
+  }
 }
 
 a.nav-link:hover {
@@ -88,60 +102,62 @@ h1 {
   font-size: 3.5em;
 }
   
-  /*h2 {
-    font-size: 2.5em;
-  }*/
-  
-  h3 {
-    font-size: 2em;
-  }
+h3 {
+  font-size: 2em;
+}
 
-  section {
-    padding: 40px 80px;
-  }
+section {
+  padding: 40px 80px;
+}
 
+.home {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../ravenna-mosaics/ravenna-images/001-home_1.jpg");
+  background-position: center;
+  background-size: 120%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.sepia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(85, 58, 0, 0.5);
+}
+
+@media (max-width: 800px) {
   .home {
-    display: flex;
-    flex-direction: column;
-    background-image: url("../ravenna-mosaics/ravenna-images/001-home_1.jpg");
-    background-position: center;
-    background-size: 120%;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    color: white;
-    padding: 0;
-    margin: 0;
+    background-size: cover;
   }
+}
 
-  .sepia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(85, 58, 0, 0.5);
-  }
+.title {
+  width: 70%;
+  color: white;
+  font-size: 1.6em;
+  text-shadow: 2px 2px 8px black;
+}
 
-  .title {
-    width: 60%;
-    color: white;
-    font-size: 1.6em;
-    text-shadow: 2px 2px 8px black;
-  }
+.title h1, h3 {
+  margin: 0;
+}
 
-  .title h1, h3 {
-    margin: 0;
-  }
-
-  .book {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    align-items: center;
-    min-height: 100vh;
-  }
+.book {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  min-height: 100vh;
+}
 
   .book-cover {
     min-width: 30%;
