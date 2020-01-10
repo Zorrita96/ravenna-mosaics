@@ -320,6 +320,26 @@ img {
   text-decoration: underline;
 }
 
+@media (max-width: 800px) {
+  .datelist li {
+    flex-direction: column;
+  }
+
+  .datelist {
+    text-align: justify;
+  }
+
+  .event {
+    padding: 20px 0 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .date {
+    font-size: 1.6em;
+  }
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
