@@ -378,7 +378,8 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin-bottom: 30px;
+  max-width: 80%;
 }
 
 .social {
@@ -421,10 +422,20 @@ img {
   .contacts {
     background-size: cover;
   }
-  
-  /*#linkbar {
+}
+
+@media (max-width: 500px) {
+  #linkbar {
     flex-direction: column;
-  } */
+  }
+
+  .social p {
+    font-size: 3.5em;
+  }
+
+  .icon {
+    font-size: 9em;
+  }
 }
 
 footer {
