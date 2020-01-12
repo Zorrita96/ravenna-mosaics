@@ -86,7 +86,7 @@ nav li {
   }
 
   .nav-link {
-    min-width: 80px;
+    min-width: 60px;
   }
 }
 
@@ -105,9 +105,17 @@ main {
 h1 {
   font-size: 3.5em;
 }
+
+h2 {
+  font-size: 1.5em;
+}
   
 h3 {
   font-size: 2em;
+}
+
+h1, h2, h3 {
+  margin: 0;
 }
 
 section {
@@ -169,10 +177,6 @@ section {
   text-shadow: 2px 2px 8px black;
 }
 
-.title h1, h3 {
-  margin: 0;
-}
-
 @media (max-width: 600px) {
   .title {
     width: 90%;
@@ -202,6 +206,10 @@ img {
   color: var(--brown);
   margin-right: 30px;
 }
+
+.book-description h2 {
+  text-align: center;
+}
   
 @media (max-width: 1100px) {
   .book {
@@ -211,10 +219,6 @@ img {
 
   .book-description {
     margin: 0;
-  }
-
-  .book-description h2 {
-    text-align: center;
   }
 }
 
@@ -237,6 +241,10 @@ img {
   margin-left: 30px;
 }
 
+.author-description h2 {
+  text-align: center;
+}
+
 @media (max-width: 1100px) {
   .author {
     flex-direction: column;
@@ -249,6 +257,7 @@ img {
 
   .author-description h2 {
     text-align: center;
+    margin-top: 25px;
   } 
 }
 
@@ -261,8 +270,7 @@ img {
 }
 
 .timetable h2 {
-  font-size: 3.3em;
-  margin-top: 20px;
+  font-size: 3.5em;
   margin-bottom: 40px;
 }
 
@@ -362,9 +370,10 @@ img {
   background: linear-gradient(90deg, rgba(245,246,249,0) 0%, rgba(17,18,37,0.7679446778711485) 14%, rgba(13,12,25,1) 39%, rgba(13,12,25,1) 50%, rgba(13,12,25,1) 61%, rgba(17,18,37,0.77) 86%, rgba(255,255,255,0) 100%);
 }
 
-.contacts h3 {
+.contacts h2 {
   font-size: 4em;
   color: var(--golden);
+  margin-top: 40px;
 }
 
 .contact-text {
@@ -408,12 +417,12 @@ img {
   align-items: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .contact-text {
-    max-width: 80%;
+    max-width: 70%;
   }
 
-  .contacts h3 {
+  .contacts h2 {
     padding-top: 60px;
   }
 }
@@ -421,6 +430,14 @@ img {
 @media (max-width: 860px) {
   .contacts {
     background-size: cover;
+  }
+
+  .contacts h2 {
+    padding-top: 0;
+  }
+
+  .contact-text {
+    font-size: 2.5em;
   }
 }
 
