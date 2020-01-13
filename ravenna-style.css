@@ -129,19 +129,19 @@ section {
 
 @media (max-width: 940px) {
   section {
-    padding: 40px 60px;
+    padding: 60px 60px;
   }
 }
 
 @media (max-width: 700px) {
   section {
-    padding: 40px 40px;
+    padding: 60px 40px;
   }
 }
 
 @media (max-width: 500px) {
   section {
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
 }
 
@@ -438,7 +438,7 @@ img {
   }
 
   .contacts h2 {
-    padding-top: 0;
+    padding-top: 40px;
   }
 
   .contact-text {
