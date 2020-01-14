@@ -148,7 +148,7 @@ section {
 .home {
   display: flex;
   flex-direction: column;
-  background-image: url("../ravenna-mosaics/ravenna-images/001-home_1small1.jpg");
+  background-image: url("../ravenna-mosaics/ravenna-images/001-home_web.jpg");
   background-position: center;
   background-size: 120%;
   align-items: center;
@@ -356,7 +356,7 @@ img {
   display: flex;
   flex-direction: column;
   background-color: lightgray;
-  background-image: url(../ravenna-mosaics/ravenna-images/020-forzas-2-double_small.jpg);
+  background-image: url(../ravenna-mosaics/ravenna-images/020-forzas-2-double_web.jpg);
   background-position: center;
   background-size: 100%;
   justify-content: center;
