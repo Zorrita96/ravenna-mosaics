@@ -352,6 +352,11 @@ img {
   }
 }
 
+.timetable__archive {
+  font-size: 3em;
+  text-decoration: underline;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
