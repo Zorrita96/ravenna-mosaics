@@ -71,7 +71,6 @@
   }
   
   .nav-link {
-    /*min-width: 150px;*/
     color: black;
     display: flex;
     height: 100%;
@@ -237,15 +236,55 @@
 
   footer {
     display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: flex-end;
+    justify-content: center;
     font-size: 1.7em;
     padding: 5px 40px;
     background: var(--darkblue);
+    color: white;
   }
   
-  footer div {
+  footer a {
+    color: white;
+  }
+  
+  .footer__contacts {
+    padding: 0;
+    margin-left: 100px;
+    color: white;
+    align-self: flex-start;
+  }
+  
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 4px 0;
+  }
+  
+  .icon--footer {
+    display: inline;
+    width: 25px;
+    text-align: end;
+    margin-right: 10px;
+  }
+  
+  .footer__copywrite {
     padding: 0;
     margin: 0;
     color: white;
+    align-self: flex-end;
+  }
+  
+  @media (max-width: 500px) {
+    .footer__contacts {
+      align-self: center;
+      margin: 0;
+    }
   }

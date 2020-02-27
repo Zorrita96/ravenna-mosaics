@@ -1,2 +1,2 @@
 # ravenna-mosaics
-A website for Iuliia Matvieieva's book
+A website for Matveyeva Julia's book
