@@ -2,5 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://matveyevajulia.art/</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+   <url>
+      <loc>https://matveyevajulia.art/lectures.html</loc>
+      <changefreq>monthly</changefreq>
    </url>
 </urlset>
