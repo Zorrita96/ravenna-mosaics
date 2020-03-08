@@ -451,11 +451,13 @@ img {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 535px) {
   #linkbar {
     flex-direction: column;
   }
+}
 
+@media (max-width: 500px) {
   .social p {
     font-size: 3.5em;
   }
