@@ -71,7 +71,6 @@ nav li {
 }
 
 .nav-link {
-  /*min-width: 150px;*/
   color: black;
   display: flex;
   height: 100%;
