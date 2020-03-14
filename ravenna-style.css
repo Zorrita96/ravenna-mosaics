@@ -367,6 +367,17 @@ img {
   }
 }
 
+.hidden-description {
+  margin-top: 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: justify;
+}
+
+#show-more-btn {
+  align-self: center;
+}
+
 .timetable__archive {
   font-size: 3em;
   text-decoration: underline;
