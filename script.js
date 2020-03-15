@@ -1,10 +1,12 @@
 function myFunction() {
-    var x = document.getElementById("hidden-description");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-      document.getElementById('show-more-btn').innerText = 'Развернуть';
+    var x = document.getElementById("fade-content").style;
+    if (x.maxHeight === "70px" || x.maxHeight === "") {
+      x.maxHeight = "none";
+      document.getElementById('fade-overlay').style.display = "none";
+      document.getElementById('show-more-button').innerText = 'Свернуть';
     } else {
-      x.style.display = "none";
-      document.getElementById('show-more-btn').innerText = 'Свернуть';
+      x.maxHeight = "70px";
+      document.getElementById('fade-overlay').style.display = "block";
+      document.getElementById('show-more-button').innerText = 'Развернуть';
     }
   }
