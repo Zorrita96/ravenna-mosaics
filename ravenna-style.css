@@ -464,17 +464,6 @@ img {
 	opacity: 0;	
 	transform: scale(0.1, 1);
 }
-/*
-@media (max-width: 500px) {
-  .show-more-btn {
-    border-top-width: 1px;
-	  border-bottom-width: 1px;
-	  border-top-style: solid;
-	  border-bottom-style: solid;
-	  border-top-color: var(--brown);
-	  border-bottom-color: var(--brown);
-  }
-} */
 
 .timetable__archive {
   font-size: 3em;
