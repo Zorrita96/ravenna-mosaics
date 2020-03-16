@@ -8,6 +8,7 @@
     <meta name="robots" content="index, follow" />
     <link rel="shortcut icon" type="image/x-icon" href="../ravenna-mosaics/favicon.ico">
     <link rel="stylesheet" type="text/css" href="lectures-style.css">
+    <script src="script.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap" rel="stylesheet">
 </head>
@@ -34,7 +35,13 @@
                     <li>
                         <div class="flag"><div class="bullet"></div><div class="date">16 марта, 19:00<br>Москва</div></div> 
                         <div class="event"><b>"Императрица&nbsp;Феодора: загадка женского портрета в&nbsp;алтаре и&nbsp;текст из&nbsp;тканей"</b>
-                            <br><b>Локация:</b> м.&nbsp;Текстильщики (Детали по&nbsp;тел.&nbsp;89166508534 или через&nbsp;fb:&nbsp;<a href="https://www.facebook.com/profile.php?id=100005211585853" target="_blank">Агнесса&nbsp;Арморик</a>)</div>
+                            <br><b>Локация:</b> м.&nbsp;Текстильщики (Детали по&nbsp;тел.&nbsp;89166508534 или через&nbsp;fb:&nbsp;<a href="https://www.facebook.com/profile.php?id=100005211585853" target="_blank">Агнесса&nbsp;Арморик</a>)
+                            <div class="event-description fade-container">
+                                <div id="fade-content-1" class="event-description__text">Единственный женский портрет в&nbsp;алтаре за&nbsp;всю историю византийской церкви&nbsp;— знаменитый портрет императрицы Феодоры из&nbsp;церкви Сан-Витале в&nbsp;Равенне. В&nbsp;чем&nbsp;загадка этого изображения? Когда&nbsp;о&nbsp;нем говорят, часто&nbsp;обращают внимание на&nbsp;роскошные, красочные ткани, которыми заполнен портрет, пишут о&nbsp;мастерстве работы и&nbsp;богатых рисунках этих тканей, об&nbsp;их разнообразии, красках, но&nbsp;не о&nbsp;значении и&nbsp;смысле... Что&nbsp;означали эти ткани? Ведь&nbsp;это был настоящий язык того времени. Если&nbsp;мы сможем расшифровать культурный код, нам раскрывается тайна портрета, оставленная самой Феодорой…</div>
+                                <div id="fade-overlay-1" class="fade-overlay"></div>
+                                <div id="show-more-button-1" class="btn show-more-btn" onclick="showMore1()"><span>Развернуть</span></div>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <div class="flag"><div class="bullet"></div><div class="date">17 марта, 15:00<br>Москва</div></div> 
@@ -49,7 +56,13 @@
                     <li>
                         <div class="flag"><div class="bullet"></div><div class="date">19 марта, 17:00<br>Сергиев Посад</div></div> 
                         <div class="event"><b>"Велум в&nbsp;иконографии как&nbsp;реальный предмет и&nbsp;символ: история&nbsp;появления и&nbsp;трансформации"</b>
-                            <br><b>Локация:</b> <a href="https://mpda.ru/contacts/map/">Московская духовная академия</a>, Свято&#8209;Троицкая&nbsp;Сергиева&nbsp;Лавра.</div>
+                            <br><b>Локация:</b> <a href="https://mpda.ru/contacts/map/">Московская духовная академия</a>, Свято&#8209;Троицкая&nbsp;Сергиева&nbsp;Лавра.
+                            <div class="event-description fade-container">
+                                <div id="fade-content-2" class="event-description__text">Велум в&nbsp;христианской иконографии! Насколько причудливы и затейливы бывают эти ткани в&nbsp;иконописи. Сегодня они кажутся предельно фантастичными элементами иконописи. Действительно, разве можно представить себе ткань, переброшенную через часть крепостной стены или&nbsp;завязанную пышным узлом на&nbsp;части здания? Чем руководствовались художники, рисуя такие ткани? Был&nbsp;ли велум когда-то реальным предметом? Как&nbsp;он использовался и&nbsp;что означал? Как&nbsp;и&nbsp;почему он стал неотъемлемым атрибутом христианской иконографии? Об&nbsp;этом всем в&nbsp;лекции Юлии&nbsp;Матвеевой.</div>
+                                <div id="fade-overlay-2" class="fade-overlay"></div>
+                                <div id="show-more-button-2" class="btn show-more-btn" onclick="showMore2()"><span>Развернуть</span></div>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <div class="flag"><div class="bullet"></div><div class="date">20 марта, 18:00<br>Москва</div></div> 
@@ -65,7 +78,13 @@
                     <li>
                         <div class="flag"><div class="bullet"></div><div class="date">23 марта, 18:00<br>Москва</div></div> 
                         <div class="event"><b>"Свет Славы&nbsp;Божией в&nbsp;иконографии от&nbsp;истоков к&nbsp;развитию: богатство&nbsp;идей и&nbsp;смыслов"</b>
-                            <br><b>Локация:</b> <a href="https://libfl.ru/" target="_blank">Библиотека иностранной литературы</a> им.&nbsp;М.&nbsp;И.&nbsp;Рудомино, ул.&nbsp;Николоямская,&nbsp;1.</div>
+                            <br><b>Локация:</b> <a href="https://libfl.ru/" target="_blank">Библиотека иностранной литературы</a> им.&nbsp;М.&nbsp;И.&nbsp;Рудомино, ул.&nbsp;Николоямская,&nbsp;1.
+                            <div class="event-description fade-container">
+                                <div id="fade-content-3" class="event-description__text">Как изобразить Свет Славы Божией? Да&nbsp;и можно ли его изобразить? Этот&nbsp;вопрос стал перед христианами, как&nbsp;только появляются их первые украшенные храмы. Задача была не&nbsp;из легких не&nbsp;только для художников, но&nbsp;и богословов. Изображение должно было быть понятным для разных народов и&nbsp;культур, входивших постепенно в&nbsp;христианство. Какие&nbsp;формы находят художники и богословы для&nbsp;столь важной реалии божественного мира? Как&nbsp;появляется мандорла&nbsp;– Свет&nbsp;Божественной Славы вокруг всей фигуры? Какие&nbsp;тексты, реальные предметы и природные явления помогают создавать этот образ? И&nbsp;в&nbsp;результате какое богатство и разнообразие рождается в&nbsp;иконографии!</div>
+                                <div id="fade-overlay-3" class="fade-overlay"></div>
+                                <div id="show-more-button-3" class="btn show-more-btn" onclick="showMore3()"><span>Развернуть</span></div>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <div class="flag"><div class="bullet"></div><div class="date">26 марта, 17:00<br>Сергиев Посад</div></div> 
