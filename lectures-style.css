@@ -6,6 +6,7 @@
     --brown: rgb(85, 51, 0);
     --golden: rgb(240, 218, 146);
     --darkblue: rgb(13, 12, 25);
+    --maroon: rgb(167, 0, 0);
   }
     
   body {
@@ -330,6 +331,20 @@
   .show-more-btn:hover::after {
     opacity: 0;	
     transform: scale(0.1, 1);
+  }
+
+  .event--cancelled::before {
+    content: "Лекция отменена в связи с карантином";
+    display: block;
+    color: var(--maroon);
+    font-weight: bold;
+  }
+  
+  .event--online::before {
+    content: "Онлайн-лекция";
+    display: block;
+    color: var(--maroon);
+    font-weight: bold;
   }
 
   footer {
