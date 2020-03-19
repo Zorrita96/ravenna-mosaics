@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 :root {
@@ -96,7 +98,7 @@ nav li {
 }
 
 a.nav-link:hover {
-  background-color: rgb(85, 51, 0);
+  background-color: var(--brown);
   color: white;
   transition: 0.5s;
 }
@@ -335,7 +337,11 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: left;
+  background: rgb(59,42,17);
+  background: -moz-linear-gradient(90deg, rgba(59,42,17,1) 65%, rgba(59,42,17,0.7) 80%, rgba(59,42,17,0.45) 90%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(59,42,17,1) 65%, rgba(59,42,17,0.7) 80%, rgba(59,42,17,0.45) 90%, rgba(255,255,255,0) 100%);
   background: linear-gradient(90deg, rgba(59,42,17,1) 65%, rgba(59,42,17,0.7) 80%, rgba(59,42,17,0.45) 90%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b2a11",endColorstr="#ffffff",GradientType=1);
   min-width: 250px;
   height: 70px;
   padding: 5px 0;
@@ -410,9 +416,6 @@ img {
   background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 100%);
   background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 100%);
   background: linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 100%);
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  cursor: pointer;
   display: block;
   height: 70px;
   position: absolute;
@@ -529,7 +532,11 @@ img {
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(90deg, rgba(245,246,249,0) 0%, rgba(17,18,37,0.7679446778711485) 14%, rgba(13,12,25,1) 39%, rgba(13,12,25,1) 50%, rgba(13,12,25,1) 61%, rgba(17,18,37,0.77) 86%, rgba(255,255,255,0) 100%);
+  background: rgb(13,12,25,1);
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(17,18,37,0.77) 14%, rgba(13,12,25,1) 39%, rgba(13,12,25,1) 50%, rgba(13,12,25,1) 61%, rgba(17,18,37,0.77) 86%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(17,18,37,0.77) 14%, rgba(13,12,25,1) 39%, rgba(13,12,25,1) 50%, rgba(13,12,25,1) 61%, rgba(17,18,37,0.77) 86%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(17,18,37,0.77) 14%, rgba(13,12,25,1) 39%, rgba(13,12,25,1) 50%, rgba(13,12,25,1) 61%, rgba(17,18,37,0.77) 86%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
 }
 
 .contacts h2 {
@@ -660,7 +667,7 @@ footer a {
 }
 
 .icon--footer {
-  display: inline;
+  display: inline-block;
   width: 25px;
   text-align: end;
   margin-right: 10px;

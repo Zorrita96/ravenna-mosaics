@@ -499,7 +499,7 @@ footer a {
 }
 
 .icon--footer {
-  display: inline;
+  display: inline-block;
   width: 25px;
   text-align: end;
   margin-right: 10px;
