@@ -216,10 +216,6 @@
       flex-direction: column;
     }
   
-    .datelist {
-      text-align: justify;
-    }
-  
     .event {
       padding: 20px 0 0 0;
     }
@@ -258,6 +254,12 @@
     max-height: 70px;
     overflow: hidden;
   }
+  
+@media (max-width: 500px) {
+  .event-description__text {
+    text-align: left;
+  }
+}
   
   .fade-overlay {
     background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 100%);
