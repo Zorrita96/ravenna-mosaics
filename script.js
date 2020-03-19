@@ -36,3 +36,16 @@ function showMore3() {
     document.getElementById('show-more-button-3').innerText = 'Развернуть';
   }
 }
+
+function showMore4() {
+  var x = document.getElementById("fade-content-4").style;
+  if (x.maxHeight === "70px" || x.maxHeight === "") {
+    x.maxHeight = "none";
+    document.getElementById('fade-overlay-4').style.display = "none";
+    document.getElementById('show-more-button-4').innerText = 'Свернуть';
+  } else {
+    x.maxHeight = "70px";
+    document.getElementById('fade-overlay-4').style.display = "block";
+    document.getElementById('show-more-button-4').innerText = 'Развернуть';
+  }
+}

@@ -6,6 +6,7 @@
   --brown: rgb(85, 51, 0);
   --golden: rgb(240, 218, 146);
   --darkblue: rgb(13, 12, 25);
+  --maroon: rgb(167, 0, 0);
 }
   
 body {
@@ -468,6 +469,20 @@ img {
 .timetable__archive {
   font-size: 3em;
   text-decoration: underline;
+}
+
+.event--cancelled::before {
+  content: "Лекция отменена в связи с карантином";
+  display: block;
+  color: var(--maroon);
+  font-weight: bold;
+}
+
+.event--online::before {
+  content: "Онлайн-лекция";
+  display: block;
+  color: var(--maroon);
+  font-weight: bold;
 }
 
 /*
