@@ -49,3 +49,16 @@ function showMore4() {
     document.getElementById('show-more-button-4').innerText = 'Развернуть';
   }
 }
+
+function showMore5() {
+  var x = document.getElementById("fade-content-5").style;
+  if (x.maxHeight === "70px" || x.maxHeight === "") {
+    x.maxHeight = "none";
+    document.getElementById('fade-overlay-5').style.display = "none";
+    document.getElementById('show-more-button-5').innerText = 'Свернуть';
+  } else {
+    x.maxHeight = "70px";
+    document.getElementById('fade-overlay-5').style.display = "block";
+    document.getElementById('show-more-button-5').innerText = 'Развернуть';
+  }
+}
