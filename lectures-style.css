@@ -347,6 +347,12 @@
     font-weight: bold;
   }
 
+  /*
+=========================
+    FOOTER SECTION
+=========================
+*/
+
   footer {
     display: flex;
     flex-direction: column;
