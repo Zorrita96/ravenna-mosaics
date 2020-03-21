@@ -408,7 +408,7 @@ img {
   margin-top: 20px;
   font-size: 0.7em;
   text-align: justify;
-  max-height: 70px;
+  max-height: 65px;
   overflow: hidden;
 }
 
@@ -423,7 +423,7 @@ img {
   background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 100%);
   background: linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 100%);
   display: block;
-  height: 70px;
+  height: 65px;
   position: absolute;
   top: 20px;
   right: 0;

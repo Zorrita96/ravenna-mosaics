@@ -251,15 +251,9 @@
     margin-top: 20px;
     font-size: 0.7em;
     text-align: justify;
-    max-height: 70px;
+    max-height: 65px;
     overflow: hidden;
   }
-  
-@media (max-width: 500px) {
-  .event-description__text {
-    text-align: left;
-  }
-}
   
   .fade-overlay {
     background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 100%);
@@ -269,7 +263,7 @@
     box-sizing: border-box;
     cursor: pointer;
     display: block;
-    height: 70px;
+    height: 65px;
     position: absolute;
     top: 20px;
     right: 0;
@@ -277,6 +271,12 @@
     text-align: center;
     -webkit-transition: background 150ms ease-in;
     transition: background 150ms ease-in;
+  }
+
+  @media (max-width: 500px) {
+    .event-description__text {
+      text-align: left;
+    }
   }
   
   .btn {
