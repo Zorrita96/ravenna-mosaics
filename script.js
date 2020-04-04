@@ -7,7 +7,7 @@ for (lectureBlock of lectureBlocks) {
   let date = lectureBlock.getElementsByClassName("date")[0];
   
   // ... checking if each has an empty <date> 
-  if (date.textContent === '') {
+  if (date.textContent.includes('past')) {
     
     // If it does, add to to the <span> the class .lecture-block--empty
     lectureBlock.classList.add("lecture-block--empty");}
