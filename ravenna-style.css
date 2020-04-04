@@ -328,10 +328,14 @@ img {
   list-style-type: none;
 }
 
-.datelist li {
+.lecture-block {
   padding-bottom: 30px;
   display: flex;
   flex-direction: row;
+}
+
+.lecture-block--empty {
+  display: none;
 }
 
 .flag {
