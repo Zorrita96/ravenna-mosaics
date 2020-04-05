@@ -1,3 +1,19 @@
+// Find all the .lecture-block <divs>
+const lectureBlocks = document.querySelectorAll(".lecture-block");
+let lectureBlock;
+
+// Loop through them... 
+for (lectureBlock of lectureBlocks) {
+  let date = lectureBlock.getElementsByClassName("date")[0];
+  
+  // ... checking if each has an empty <date> 
+  if (date.textContent.includes('past')) {
+    
+    // If it does, add to to the <span> the class .lecture-block--empty
+    lectureBlock.classList.add("lecture-block--empty");}
+  }
+
+
 function showMore1() {
     var x = document.getElementById("fade-content-1").style;
     if (x.maxHeight === "65px" || x.maxHeight === "") {
