@@ -14,6 +14,32 @@ for (lectureBlock of lectureBlocks) {
   }
 
 
+  window.document.onkeydown = function(e) {
+    alert('hoge')
+    if (!e) {
+      e = event;
+    }
+    if (e.keyCode == 27) {
+      lightbox_close();
+    }
+  }
+  
+  function lightbox_open() {
+    var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+    //window.scrollTo(0, 0); 
+    document.getElementById('light').style.display = 'block';
+    document.getElementById('fade').style.display = 'block';
+    lightBoxVideo.play();
+  }
+  
+  function lightbox_close() {
+    var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+    document.getElementById('light').style.display = 'none';
+    document.getElementById('fade').style.display = 'none';
+    lightBoxVideo.pause();
+  }
+
+
 function showMore1() {
     var x = document.getElementById("fade-content-1").style;
     if (x.maxHeight === "65px" || x.maxHeight === "") {
