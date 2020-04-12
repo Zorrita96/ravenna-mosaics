@@ -60,11 +60,12 @@
             <iframe class="video__iframe" src="https://www.youtube.com/embed/kfv5zyMaGAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div> -->
 
-        <div id="light" class="video__item">
-            <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-            <iframe id="VisaChipCardVideo" class="video__iframe" width="560" height="315" src="https://www.youtube.com/embed/jqppnoqoNME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="light" class="lightbox__light video__item">
+            <iframe id="video-kultura" class="video__iframe" width="560" height="315" src="https://www.youtube.com/embed/jqppnoqoNME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div id="fade" onClick="lightbox_close();"></div>
+        <div id="fade" class="lightbox__fade" onClick="lightbox_close();">
+            <a class="lightbox__closex" onclick="lightbox_close();"></a>
+        </div>
         <div class="video__overlay">
             <img class="video__img" onclick="lightbox_open();" src="../ravenna-mosaics/ravenna-images/video_overlay_kultura.jpg" alt="Программа КультУра">
         </div>
