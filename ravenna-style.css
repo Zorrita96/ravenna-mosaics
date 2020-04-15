@@ -295,45 +295,19 @@ img {
   justify-content: space-around;
   align-items: center;
   margin-top: 60px;
-  position: relative;
 }
-/*
+
 .video__item {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  margin: 20px;
 }
-
-.video__iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
-/*
-.video__item {
-  overflow: hidden;
-    position: relative;
-    width:30%;
-}
-
-.video__item::after {
-    display: block;
-    content: '';
-}
-
-.video__iframe {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 
 .video__overlay {
-  max-width: 30%;
   cursor: pointer;
-  position: relative;
+}
+
+.video__img {
+  width: 100%;
 }
 
 .video__icon-container {
