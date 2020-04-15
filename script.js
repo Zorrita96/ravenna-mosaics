@@ -13,31 +13,55 @@ for (lectureBlock of lectureBlocks) {
     lectureBlock.classList.add("lecture-block--empty");}
   }
 
-
-  window.document.onkeydown = function(e) {
-    alert('hoge')
-    if (!e) {
-      e = event;
-    }
-    if (e.keyCode == 27) {
-      lightbox_close();
-    }
-  }
+/*=============================
+         VIDEO LIGHTBOX
+=============================*/
   
-  function lightbox_open() {
-    var lightBoxVideo = document.getElementById("video-kultura"); 
-    document.getElementById('light').style.display = 'block';
-    document.getElementById('fade').style.display = 'block';
+  function lightbox_open1() {
+    var lightBoxVideo = document.getElementById("video-1"); 
+    document.getElementById('light-1').style.display = 'block';
+    document.getElementById('fade-1').style.display = 'block';
     lightBoxVideo.play();
   }
-  
-  function lightbox_close() {
-    var lightBoxVideo = document.getElementById("video-kultura");
-    document.getElementById('light').style.display = 'none';
-    document.getElementById('fade').style.display = 'none';
+
+  function lightbox_close1() {
+    var lightBoxVideo = document.getElementById("video-1");
+    document.getElementById('light-1').style.display = 'none';
+    document.getElementById('fade-1').style.display = 'none';
     lightBoxVideo.pause();
   }
 
+  function lightbox_open2() {
+    var lightBoxVideo = document.getElementById("video-2"); 
+    document.getElementById('light-2').style.display = 'block';
+    document.getElementById('fade-2').style.display = 'block';
+    lightBoxVideo.play();
+  }
+
+  function lightbox_close2() {
+    var lightBoxVideo = document.getElementById("video-2");
+    document.getElementById('light-2').style.display = 'none';
+    document.getElementById('fade-2').style.display = 'none';
+    lightBoxVideo.pause();
+  }
+
+  function lightbox_open3() {
+    var lightBoxVideo = document.getElementById("video-3"); 
+    document.getElementById('light-3').style.display = 'block';
+    document.getElementById('fade-3').style.display = 'block';
+    lightBoxVideo.play();
+  }
+  
+  function lightbox_close3() {
+    var lightBoxVideo = document.getElementById("video-3");
+    document.getElementById('light-3').style.display = 'none';
+    document.getElementById('fade-3').style.display = 'none';
+    lightBoxVideo.pause();
+  }
+
+/*=============================
+       SHOW MORE BUTTONS
+=============================*/
 
 function showMore1() {
     var x = document.getElementById("fade-content-1").style;
