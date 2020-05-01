@@ -258,13 +258,16 @@ img {
 =========================
 */
 
+.decor {
+  display: flex;
+}
+
 .author {
   display: flex;
   flex-direction: column;
-  background-color: rgba(99, 67, 0, 0.6);
+  background-color: #261414;
   align-items: top;
-  /*min-height: 100vh; */
-}
+} 
 
 .author__container {
   display: flex;
