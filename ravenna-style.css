@@ -323,6 +323,12 @@ img {
   }
 }
 
+@media (max-width: 500px) {
+  .author__avatar {
+    width: 150px;
+  }
+}
+
 .video {
   display: flex;
   flex-direction: row;
