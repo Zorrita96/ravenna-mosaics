@@ -18,10 +18,16 @@ for (lectureBlock of lectureBlocks) {
 =============================*/
   
   function lightbox_open1() {
+    if (window.matchMedia("(max-width: 800px)").matches) {
+      document.getElementById('video_wrapper-1').style.display = 'block';
+      document.getElementById('video_overlay-1').style.display = 'none';
+    }
+    else {
     let lightBoxVideo = document.getElementById("video-1"); 
     document.getElementById('light-1').style.display = 'block';
     document.getElementById('fade-1').style.display = 'block';
     lightBoxVideo.play();
+    }
   }
 
   function lightbox_close1() {
@@ -32,10 +38,16 @@ for (lectureBlock of lectureBlocks) {
   }
 
   function lightbox_open2() {
+    if (window.matchMedia("(max-width: 800px)").matches) {
+      document.getElementById('video_wrapper-2').style.display = 'block';
+      document.getElementById('video_overlay-2').style.display = 'none';
+    }
+    else {
     let lightBoxVideo = document.getElementById("video-2"); 
     document.getElementById('light-2').style.display = 'block';
     document.getElementById('fade-2').style.display = 'block';
     lightBoxVideo.play();
+    }
   }
 
   function lightbox_close2() {
@@ -46,10 +58,16 @@ for (lectureBlock of lectureBlocks) {
   }
 
   function lightbox_open3() {
+    if (window.matchMedia("(max-width: 800px)").matches) {
+      document.getElementById('video_wrapper-3').style.display = 'block';
+      document.getElementById('video_overlay-3').style.display = 'none';
+    }
+    else {
     let lightBoxVideo = document.getElementById("video-3"); 
     document.getElementById('light-3').style.display = 'block';
     document.getElementById('fade-3').style.display = 'block';
     lightBoxVideo.play();
+    }
   }
   
   function lightbox_close3() {
