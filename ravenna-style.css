@@ -482,6 +482,41 @@ img {
   align-items: center;
 }
 
+.stayhome {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.stayhome__picture {
+  min-width: 200px;
+  max-width: 200px;
+  margin-right: 30px;
+}
+
+@media (max-width: 600px) {
+  .stayhome__picture {
+    display: none;
+  }
+}
+
+.stayhome__message {
+  font-size: 3em;
+  text-align: left;
+  margin: 0;
+}
+
+.stayhome__link {
+  text-decoration: underline;
+  color: var(--maroon)
+}
+
+@media (max-width: 860px) {
+.stayhome__message {
+    font-size: 2.5em;
+}
+}
+
 .datelist {
   text-align: left;
   font-size: 2em;
