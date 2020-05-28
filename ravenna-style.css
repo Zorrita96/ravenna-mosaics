@@ -267,6 +267,10 @@ img {
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
+.decor__img {
+  width: 100vw;
+}
+
 .author {
   display: flex;
   flex-direction: column;
