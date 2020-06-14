@@ -14,6 +14,10 @@
   --cherry: rgb(38, 20, 20);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #e2e2e2;
   font-family: 'Cormorant Infant', serif;
@@ -254,13 +258,17 @@ section {
   text-shadow: 1px 1px 20px black;
 }
 
+.title__upper {
+  text-transform: uppercase;
+}
+
 @media (max-width: 600px) {
   .title {
     width: 90%;
   }
 }
 
-.flex {
+.cta-btn {
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,26 +283,26 @@ section {
   padding-top: 30vh;
 }
 
-.alink {
+.cta-btn__link {
   color: white;
   text-decoration: none;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 
-.alink:hover {
+.cta-btn__link:hover {
   color: white;
 }
 
-.alink:focus {
+.cta-btn__link:focus {
   text-decoration: none;
 }
 
-.alink:active {
+.cta-btn__link:active {
   color: #FFF;
 }
 
-.bttn {
+.cta-btn__effect {
   width: 100px;
   height: 100px;
   line-height: 100px;
@@ -306,7 +314,7 @@ section {
   position: relative;
 }
 
-.bttn:after {
+.cta-btn__effect:after {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
   content: '';
@@ -321,7 +329,7 @@ section {
   border-image-slice: 1;
 }
 
-.bttn:before {
+.cta-btn__effect:before {
   content: '';
   position: absolute;
   /*border-radius:3px; */
@@ -336,32 +344,33 @@ section {
   border-image-slice: 1;
 }
 
-.bttn:hover:after {
+.cta-btn__effect:hover:after {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.bttn:active {
+.cta-btn__effect:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.bttn:active:before {
+.cta-btn__effect:active:before {
   background-color: white;
 }
 
-.bttn:active:after {
+.cta-btn__effect:active:after {
   border-color: white;
 }
 
-.diamond {
-  margin: 0;
-  padding: 0;
+@media (max-width: 935px) {
+  .cta-btn {
+    padding-top: 100px;
+  }
 }
 
-@media (max-width: 935px) {
-  .flex {
-    padding-top: 100px;
+@media (max-width: 500px) {
+  .cta-btn {
+    font-size: 1.5em;
   }
 }
 

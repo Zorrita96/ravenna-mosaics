@@ -13,6 +13,10 @@
   --maroon: rgb(167, 0, 0);
   --cherry: rgb(38, 20, 20);
 }
+
+html {
+  scroll-behavior: smooth;
+}
   
 body {
   background-color: #e2e2e2;
@@ -215,13 +219,17 @@ section {
   text-shadow: 1px 1px 20px black;
 }
 
+.title__upper {
+  text-transform: uppercase;
+}
+
 @media (max-width: 600px) {
   .title {
     width: 90%;
   }
 }
 
-.flex {
+.cta-btn {
   height:100px;
   display:flex;
   align-items:center;
@@ -230,7 +238,7 @@ section {
   padding-top: 30vh;
 }
 
-.alink {
+.cta-btn__link {
   color:white;
   text-decoration:none;
   transition:0.3s all ease;
@@ -245,7 +253,7 @@ section {
   }
 }
 
-.bttn {
+.cta-btn__effect {
   width:100px;
   height:100px;
   line-height:100px;
@@ -300,14 +308,15 @@ section {
   }
 }
 
-.diamond {
-  margin: 0;
-  padding: 0;
+@media (max-width: 935px) {
+  .cta-btn {
+    padding-top: 100px;
+  }
 }
 
-@media (max-width: 935px) {
-  .flex {
-    padding-top: 100px;
+@media (max-width: 500px) {
+  .cta-btn {
+    font-size: 1.5em;
   }
 }
 
