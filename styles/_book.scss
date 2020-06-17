@@ -1,0 +1,38 @@
+.book {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: top;
+    min-height: 100vh;
+  }
+  
+  .book-cover {
+    min-width: 30%;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .book-description {
+    font-size: 2.3em;
+    font-weight: bold;
+    text-align: justify;
+    color: var(--brown);
+    margin-right: 30px;
+  }
+  
+  .book-description h2 {
+    text-align: center;
+  }
+    
+  @media (max-width: 1100px) {
+    .book {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .book-description {
+      margin: 0;
+    }
+  }

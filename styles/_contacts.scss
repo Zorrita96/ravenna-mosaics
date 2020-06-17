@@ -1,0 +1,113 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    background-image: url(../ravenna-images/020-forzas-2-double_web.jpg);
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+  }
+  
+  .blue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(13,12,25,1);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(17,18,37,0.77) 14%, rgba(13,12,25,1) 39%, rgba(13,12,25,1) 50%, rgba(13,12,25,1) 61%, rgba(17,18,37,0.77) 86%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(17,18,37,0.77) 14%, rgba(13,12,25,1) 39%, rgba(13,12,25,1) 50%, rgba(13,12,25,1) 61%, rgba(17,18,37,0.77) 86%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(17,18,37,0.77) 14%, rgba(13,12,25,1) 39%, rgba(13,12,25,1) 50%, rgba(13,12,25,1) 61%, rgba(17,18,37,0.77) 86%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+  }
+  
+  .contacts h2 {
+    font-size: 4em;
+    color: var(--golden);
+    margin-top: 40px;
+  }
+  
+  .contact-text {
+    color: white;
+    font-size: 3em;
+    max-width: 60%;
+  }
+  
+  #linkbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    max-width: 80%;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .social p {
+    font-size: 2em;
+    color: white;
+    margin: 0;
+  }
+  
+  .icon {
+    font-size: 7em;
+    margin: 20px;
+    color: var(--darkblue);
+    background-color: var(--golden);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 1000px) {
+    .contact-text {
+      max-width: 70%;
+    }
+  
+    .contacts h2 {
+      padding-top: 60px;
+    }
+  }
+  
+  @media (max-width: 860px) {
+    .contacts {
+      background-size: cover;
+    }
+  
+    .contacts h2 {
+      padding-top: 40px;
+    }
+  
+    .contact-text {
+      font-size: 2.5em;
+    }
+  }
+  
+  @media (max-width: 535px) {
+    #linkbar {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .social p {
+      font-size: 3.5em;
+    }
+  
+    .icon {
+      font-size: 9em;
+    }
+  }
