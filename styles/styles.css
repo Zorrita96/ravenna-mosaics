@@ -198,11 +198,6 @@ section {
   }
 }
 
-/*
-=========================
-    HOME SECTION
-=========================
-*/
 .home {
   display: block;
   height: 100vh;
@@ -212,7 +207,7 @@ section {
 }
 
 .prallax {
-  background-image: url("../ravenna-mosaics/ravenna-images/001-home_web.jpg");
+  background-image: url("../ravenna-images/001-home_web.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -374,11 +369,6 @@ section {
   }
 }
 
-/*
-=========================
-    BOOK SECTION
-=========================
-*/
 .book {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -429,11 +419,6 @@ img {
   }
 }
 
-/*
-=========================
-    AUTHOR SECTION
-=========================
-*/
 .author {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,11 +647,6 @@ img {
   }
 }
 
-/*
-=========================
-    TIMETABLE SECTION
-=========================
-*/
 .timetable {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -957,11 +937,6 @@ img {
   font-weight: bold;
 }
 
-/*
-=========================
-    CONTACTS SECTION
-=========================
-*/
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -971,7 +946,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: lightgray;
-  background-image: url(../ravenna-mosaics/ravenna-images/020-forzas-2-double_web.jpg);
+  background-image: url(../ravenna-images/020-forzas-2-double_web.jpg);
   background-position: center;
   background-size: 100%;
   -webkit-box-pack: center;
@@ -1112,11 +1087,6 @@ img {
   }
 }
 
-/*
-=========================
-    FOOTER SECTION
-=========================
-*/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1194,4 +1164,4 @@ footer a {
     margin: 0;
   }
 }
-/*# sourceMappingURL=ravenna-style.css.map */
+/*# sourceMappingURL=styles.css.map */

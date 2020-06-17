@@ -1,0 +1,246 @@
+.timetable {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    color: var(--brown);
+  }
+  
+  .timetable h2 {
+    font-size: 3.5em;
+    margin-bottom: 40px;
+  }
+  
+  .afisha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stayhome {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  
+  .stayhome__picture {
+    min-width: 200px;
+    max-width: 200px;
+    margin-right: 30px;
+  }
+  
+  @media (max-width: 600px) {
+    .stayhome__picture {
+      display: none;
+    }
+  }
+  
+  .stayhome__message {
+    font-size: 3em;
+    text-align: left;
+    margin: 0;
+  }
+  
+  .stayhome__link {
+    text-decoration: underline;
+    color: var(--maroon)
+  }
+  
+  @media (max-width: 860px) {
+  .stayhome__message {
+      font-size: 2.5em;
+  }
+  }
+  
+  .datelist {
+    text-align: left;
+    font-size: 2em;
+    list-style-type: none;
+  }
+  
+  .lecture-block {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .lecture-block--empty {
+    display: none;
+  }
+  
+  .flag {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background: rgb(59,42,17);
+    background: -moz-linear-gradient(90deg, rgba(59,42,17,1) 65%, rgba(59,42,17,0.7) 80%, rgba(59,42,17,0.45) 90%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(59,42,17,1) 65%, rgba(59,42,17,0.7) 80%, rgba(59,42,17,0.45) 90%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(59,42,17,1) 65%, rgba(59,42,17,0.7) 80%, rgba(59,42,17,0.45) 90%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b2a11",endColorstr="#ffffff",GradientType=1);
+    min-width: 250px;
+    height: 70px;
+    padding: 5px 0;
+    border-radius: 3px;
+  }
+  
+  .bullet {
+    width: 50px;
+    margin-left: 7px;
+  }
+  
+  .date {
+    margin-left: 10px;
+    color: white;
+  }
+  
+  .event {
+    font-size: 1.2em;
+    padding-left: 20px;
+  }
+  
+  .event a {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 800px) {
+    .datelist li {
+      flex-direction: column;
+    }
+  
+    .event {
+      padding: 20px 0 0 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .flag {
+      height: 55px;
+    } 
+  
+    .bullet {
+      width: 40px;
+    }
+    
+    .date {
+      font-size: 1.3em;
+    }
+  }
+  
+  .event-description {
+    text-align: center;
+    max-width: 700px;
+    display: inline-block;
+  }
+  
+  .fade-container{
+    margin: auto;
+    position: relative;
+  }
+  
+  .event-description__text {
+    font-family: 'PT Serif', serif;
+    margin-top: 20px;
+    font-size: 0.7em;
+    text-align: justify;
+    max-height: 65px;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 500px) {
+    .event-description__text {
+      text-align: left;
+    }
+  } 
+  
+  .fade-overlay {
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(255,255,255,0) 100%);
+    display: block;
+    height: 65px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    -webkit-transition: background 150ms ease-in;
+    transition: background 150ms ease-in;
+  }
+  
+  .btn {
+      line-height: 40px;
+      height: 40px;
+      text-align: center;
+      width: 250px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .show-more-btn {
+      color: var(--brown);
+      transition: all 0.3s;
+    position: relative;
+    margin-top: 10px;
+  }
+  .show-more-btn span {
+      transition: all 0.3s;
+  }
+  
+  .show-more-btn::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 0.3s;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-top-color: var(--brown);
+      border-bottom-color: var(--brown);
+      transform: scale(0.1, 1);
+  }
+  .show-more-btn:hover span {
+      letter-spacing: 2px;
+  }
+  .show-more-btn:hover::before {
+      opacity: 1;	
+      transform: scale(1, 1);	
+  }
+  .show-more-btn::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s;
+      background-color: transparent;
+  }
+  .show-more-btn:hover::after {
+      opacity: 0;	
+      transform: scale(0.1, 1);
+  }
+  
+  .timetable__archive {
+    font-size: 3em;
+    text-decoration: underline;
+  }
+  
+  .event--cancelled::before {
+    content: "Лекция отменена в связи с карантином";
+    display: block;
+    color: var(--maroon);
+    font-weight: bold;
+  }
+  
+  .event--online::before {
+    content: "Онлайн-лекция";
+    display: block;
+    color: var(--maroon);
+    font-weight: bold;
+  }
