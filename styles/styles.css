@@ -814,6 +814,10 @@ img {
   display: inline-block;
 }
 
+.display-none {
+  display: none;
+}
+
 .fade-container {
   margin: auto;
   position: relative;
@@ -932,6 +936,13 @@ img {
 
 .event--online::before {
   content: "Онлайн-лекция";
+  display: block;
+  color: var(--maroon);
+  font-weight: bold;
+}
+
+.event--online-en::before {
+  content: "Online lecture";
   display: block;
   color: var(--maroon);
   font-weight: bold;
