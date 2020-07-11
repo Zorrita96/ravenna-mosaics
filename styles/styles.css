@@ -149,6 +149,12 @@ a.nav-link:hover:after {
   left: 0;
 }
 
+@media screen and (max-width: 500px) {
+  .nav-link {
+    display: none;
+  }
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,6 +201,73 @@ section {
 @media (max-width: 500px) {
   section {
     padding: 60px 20px;
+  }
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  /* will be changed this with JavaScript */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--cherry);
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  line-height: 0;
+  font-size: 60px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: var(--cherry);
+  color: white;
+  border: none;
+  padding: 0 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .openbtn {
+    display: block;
   }
 }
 
