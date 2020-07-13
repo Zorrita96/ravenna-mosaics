@@ -18,7 +18,7 @@ header {
     width: 800px;
   }
   
-  nav > ul {
+  .navbar {
     font-size: 2em;
     display: flex;
     flex-direction: row;
@@ -33,9 +33,9 @@ header {
     display: flex;
     height: 100%;
     width: 100%;
-  }
+  } 
   
-  .nav-link {
+  .navbar__link {
     color: white;
     display: flex;
     height: 100%;
@@ -54,12 +54,12 @@ header {
       width: 100%;
     }
   
-    .nav-link {
+    .navbar__link {
       width: 100%;
     }
   }
   
-  a.nav-link:after {    
+  a.navbar__link:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -71,13 +71,13 @@ header {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  a.nav-link:hover:after { 
+  a.navbar__link:hover:after { 
     width: 100%; 
     left: 0; 
   }
 
   @media screen and (max-width: 500px) {
-    .nav-link {
+    .navbar__link {
       display: none;
     }
   }

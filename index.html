@@ -18,17 +18,29 @@
 <body>
 <header>
     <nav>
-    <ul id="navbar">
-        <li><a class="nav-link" href="https://matveyevajulia.art/">Главная</a></li>
-        <li><a class="nav-link" href="#book">О книге</a></li>
-        <li><a class="nav-link" href="#author">Об авторе</a></li>
-        <li><a class="nav-link" href="https://matveyevajulia.art/lectures.html">Афиша</a></li>
-        <li><a class="nav-link" href="#contacts">Контакты</a></li>
+    <ul class="navbar">
+        <li><a class="navbar__link" href="https://matveyevajulia.art/">Главная</a></li>
+        <li><a class="navbar__link" href="#book">О книге</a></li>
+        <li><a class="navbar__link" href="#author">Об авторе</a></li>
+        <li><a class="navbar__link" href="https://matveyevajulia.art/lectures.html">Афиша</a></li>
+        <li><a class="navbar__link" href="#contacts">Контакты</a></li>
+        <button class="sidebar__openbtn" onclick="openNav()">&#9776;</button>
     </ul>
     </nav>
 </header>
 
 <main>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="sidebar__closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidebar__menu">
+            <a class="sidebar__link" href="https://matveyevajulia.art/">Главная</a>
+            <a class="sidebar__link" href="#book">О книге</a>
+            <a class="sidebar__link" href="#author">Об авторе</a>
+            <a class="sidebar__link" href="https://matveyevajulia.art/lectures.html">Афиша</a>
+            <a class="sidebar__link" href="#contacts">Контакты</a>
+        </div>
+    </div>
+
 <section id="home" class="home prallax">
     <div class="sepia">
         <div class="title">
