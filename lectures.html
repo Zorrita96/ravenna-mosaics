@@ -23,6 +23,12 @@
             <li><a class="navbar__link" href="https://matveyevajulia.art#author">Об авторе</a></li>
             <li><a class="navbar__link" href="https://matveyevajulia.art/lectures.html">Афиша</a></li>
             <li><a class="navbar__link" href="https://matveyevajulia.art#contacts">Контакты</a></li>
+            <li class="dropdown"><a class="navbar__link">Язык&nbsp;<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown__list">
+                    <a class="dropdown__item" href="https://matveyevajulia.art/en/">English</a>
+                    <a class="dropdown__item" href="https://matveyevajulia.art/">Русский</a>
+                </div>
+            </li>
             <button class="sidebar__openbtn" onclick="openNav()">&#9776;</button>
         </ul>
         </nav>
@@ -33,10 +39,14 @@
             <a href="javascript:void(0)" class="sidebar__closebtn" onclick="closeNav()">&times;</a>
             <div class="sidebar__menu">
                 <a class="sidebar__link" href="https://matveyevajulia.art/">Главная</a>
-                <a class="sidebar__link" href="#book">О книге</a>
-                <a class="sidebar__link" href="#author">Об авторе</a>
+                <a class="sidebar__link" onclick="closeNav()" href="#book">О книге</a>
+                <a class="sidebar__link" onclick="closeNav()" href="#author">Об авторе</a>
                 <a class="sidebar__link" href="https://matveyevajulia.art/lectures.html">Афиша</a>
-                <a class="sidebar__link" href="#contacts">Контакты</a>
+                <a class="sidebar__link" onclick="closeNav()" href="#contacts">Контакты</a>
+                <br><br>
+                <a class="sidebar__link">Язык:</a>
+                <a class="sidebar__link" href="https://matveyevajulia.art/en/">English</a>
+                <a class="sidebar__link" href="https://matveyevajulia.art/">Русский</a>
             </div>
         </div>
 
