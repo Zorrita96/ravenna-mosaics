@@ -17,19 +17,40 @@
 
 <body>
 <header>
-    <div>Ru</div>
     <nav>
-    <ul id="navbar">
-        <li><a class="nav-link" href="https://matveyevajulia.art/en/">Home</a></li>
-        <li><a class="nav-link" href="#book">Book</a></li>
-        <li><a class="nav-link" href="#author">Author</a></li>
-        <li><a class="nav-link" href="https://matveyevajulia.art/en/lectures.html">Timetable</a></li>
-        <li><a class="nav-link" href="#contacts">Contact</a></li>
+    <ul class="navbar">
+        <li><a class="navbar__link" href="https://matveyevajulia.art/en/">Home</a></li>
+        <li><a class="navbar__link" href="#book">Book</a></li>
+        <li><a class="navbar__link" href="#author">Author</a></li>
+        <li><a class="navbar__link" href="https://matveyevajulia.art/en/lectures.html">Timetable</a></li>
+        <li><a class="navbar__link" href="#contacts">Contact</a></li>
+        <li class="dropdown"><a class="navbar__link">Language&nbsp;<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown__list">
+                <a class="dropdown__item" href="https://matveyevajulia.art/en/">English</a>
+                <a class="dropdown__item" href="https://matveyevajulia.art/">Русский</a>
+            </div>
+        </li>
+        <button class="sidebar__openbtn" onclick="openNav()">&#9776;</button>
     </ul>
     </nav>
 </header>
 
 <main>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="sidebar__closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidebar__menu">
+            <a class="sidebar__link" href="https://matveyevajulia.art/en/">Home</a>
+            <a class="sidebar__link" onclick="closeNav()" href="#book">Book</a>
+            <a class="sidebar__link" onclick="closeNav()" href="#author">Author</a>
+            <a class="sidebar__link" href="https://matveyevajulia.art/en/lectures.html">Timetable</a>
+            <a class="sidebar__link" onclick="closeNav()" href="#contacts">Contact</a>
+            <br><br>
+            <a class="sidebar__link">Language:</a>
+            <a class="sidebar__link" href="https://matveyevajulia.art/en/">English</a>
+            <a class="sidebar__link" href="https://matveyevajulia.art/">Русский</a>
+        </div>
+    </div>
+
 <section id="home" class="home prallax">
     <div class="sepia">
         <div class="title">
