@@ -102,6 +102,13 @@
   .event a {
     text-decoration: underline;
   }
+
+  .lecture__list {
+    list-style-type: disc;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 20px;
+  }
   
   @media (max-width: 800px) {
     .datelist li {
