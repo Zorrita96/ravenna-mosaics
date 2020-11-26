@@ -98,16 +98,41 @@
     font-size: 1.2em;
     padding-left: 20px;
   }
-  
-  .event a {
-    text-decoration: underline;
-  }
 
   .lecture__list {
+    font-family: 'PT Serif', serif;
     list-style-type: disc;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: bold;
     padding-left: 20px;
+  }
+
+  .price p {
+    margin-bottom: 7px;
+  }
+
+  .price__comment {
+    margin-top: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 0.6em;
+    max-width: 700px;
+  }
+
+  .price__button {
+    display: block;
+    width: 350px;
+    background-color: var(--cherry);
+    border: 3px solid var(--cherry);
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    &:hover {
+      background-color: white;
+      color: var(--cherry);
+    }
   }
   
   @media (max-width: 800px) {
