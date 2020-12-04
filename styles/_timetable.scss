@@ -99,12 +99,18 @@
     padding-left: 20px;
   }
 
-  .lecture__list {
+  .lecture-list {
     font-family: 'PT Serif', serif;
     list-style-type: disc;
     font-size: 0.7em;
-    font-weight: bold;
     padding-left: 20px;
+    line-height: 1.5;
+      li {
+        margin: 10px 0 10px 0;
+    }
+    &__date {
+      font-weight: bold;
+    }
   }
 
   .price p {
