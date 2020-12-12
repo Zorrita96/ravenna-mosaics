@@ -1,0 +1,33 @@
+.bookpage {
+    background-color: $maroon;
+    height: 1000px;
+}
+
+.cupola {
+    position: absolute;
+    top: -510px;
+    left: -575px;
+    height: 1500px;
+    width: auto;
+}
+
+.booktitle {
+    position: absolute;
+    top: 200px;
+    left: 830px;
+    color: white;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.booktitle__subtitle {
+    font-size: 2em;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.order-btn {
+    width: 200px;
+    font-size: 2em;
+    margin: 40px 20px 20px 50px;
+}

@@ -6,21 +6,13 @@
   box-sizing: border-box;
 }
 
-:root {
-  --brown: rgb(85, 51, 0);
-  --golden: rgb(240, 218, 146);
-  --darkblue: rgb(13, 12, 25);
-  --maroon: rgb(167, 0, 0);
-  --cherry: rgb(38, 20, 20);
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #e2e2e2;
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   font-size: 10px;
   color: black;
   width: 100%;
@@ -60,7 +52,7 @@ header {
   top: 0;
   height: 40px;
   padding: 0px 20px;
-  background-color: var(--cherry);
+  background-color: #261414;
   z-index: 1;
 }
 
@@ -125,7 +117,7 @@ nav li {
 .dropdown__list {
   display: none;
   position: absolute;
-  background-color: var(--cherry);
+  background-color: #261414;
   min-width: 150px;
   padding: 40px 15px 15px 15px;
   z-index: 1;
@@ -239,7 +231,7 @@ section {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: var(--cherry);
+  background-color: #261414;
   overflow-x: hidden;
   padding-top: 60px;
   -webkit-transition: 0.5s;
@@ -282,7 +274,7 @@ section {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  background-color: var(--cherry);
+  background-color: #261414;
   color: white;
   border: none;
   padding: 0 20px;
@@ -502,7 +494,7 @@ img {
   font-size: 2.3em;
   font-weight: bold;
   text-align: justify;
-  color: var(--brown);
+  color: #553300;
   margin-right: 30px;
 }
 
@@ -533,7 +525,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: var(--cherry);
+  background-color: #261414;
   -webkit-box-align: top;
       -ms-flex-align: top;
           align-items: top;
@@ -765,7 +757,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--brown);
+  color: #553300;
 }
 
 .timetable h2 {
@@ -817,7 +809,7 @@ img {
 
 .stayhome__link {
   text-decoration: underline;
-  color: var(--maroon);
+  color: #a70000;
 }
 
 @media (max-width: 860px) {
@@ -913,22 +905,36 @@ img {
   max-width: 700px;
 }
 
-.price__button {
+.basic-btn {
   display: block;
   width: 350px;
-  background-color: var(--cherry);
-  border: 3px solid var(--cherry);
   border-radius: 3px;
   padding: 5px;
   font-size: 0.8em;
   font-weight: bold;
-  color: white;
   text-align: center;
 }
 
-.price__button:hover {
+.basic-btn--maroon {
+  background-color: #261414;
+  border: 3px solid #261414;
+  color: white;
+}
+
+.basic-btn--maroon:hover {
   background-color: white;
-  color: var(--cherry);
+  color: #261414;
+}
+
+.basic-btn--white {
+  background-color: white;
+  border: 3px solid white;
+  color: #261414;
+}
+
+.basic-btn--white:hover {
+  background-color: #261414;
+  color: white;
 }
 
 @media (max-width: 800px) {
@@ -1009,7 +1015,7 @@ img {
 }
 
 .show-more-btn {
-  color: var(--brown);
+  color: #553300;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
@@ -1035,8 +1041,8 @@ img {
   border-bottom-width: 1px;
   border-top-style: solid;
   border-bottom-style: solid;
-  border-top-color: var(--brown);
-  border-bottom-color: var(--brown);
+  border-top-color: #553300;
+  border-bottom-color: #553300;
   -webkit-transform: scale(0.1, 1);
           transform: scale(0.1, 1);
 }
@@ -1077,21 +1083,21 @@ img {
 .event--cancelled::before {
   content: "Лекция отменена в связи с карантином";
   display: block;
-  color: var(--maroon);
+  color: #a70000;
   font-weight: bold;
 }
 
 .event--online::before {
   content: "Онлайн-лекция";
   display: block;
-  color: var(--maroon);
+  color: #a70000;
   font-weight: bold;
 }
 
 .event--online-en::before {
   content: "Online lecture";
   display: block;
-  color: var(--maroon);
+  color: #a70000;
   font-weight: bold;
 }
 
@@ -1141,7 +1147,7 @@ img {
 
 .contacts h2 {
   font-size: 4em;
-  color: var(--golden);
+  color: #f0da92;
   margin-top: 40px;
 }
 
@@ -1190,8 +1196,8 @@ img {
 .icon {
   font-size: 7em;
   margin: 20px;
-  color: var(--darkblue);
-  background-color: var(--golden);
+  color: #0d0c19;
+  background-color: #f0da92;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -1259,7 +1265,7 @@ footer {
           justify-content: center;
   font-size: 1.7em;
   padding: 5px 40px;
-  background: var(--darkblue);
+  background: #0d0c19;
   color: white;
 }
 
@@ -1321,5 +1327,39 @@ footer a {
         align-self: center;
     margin: 0;
   }
+}
+
+.bookpage {
+  background-color: #261414;
+  height: 1000px;
+}
+
+.cupola {
+  position: absolute;
+  top: -510px;
+  left: -575px;
+  height: 1500px;
+  width: auto;
+}
+
+.booktitle {
+  position: absolute;
+  top: 200px;
+  left: 830px;
+  color: white;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.booktitle__subtitle {
+  font-size: 2em;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.order-btn {
+  width: 200px;
+  font-size: 2em;
+  margin: 40px 20px 20px 50px;
 }
 /*# sourceMappingURL=styles.css.map */
