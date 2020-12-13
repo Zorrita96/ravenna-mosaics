@@ -1,6 +1,5 @@
 .bookpage {
     background-color: $maroon;
-    height: 1000px;
 }
 
 .cupola {
@@ -11,13 +10,16 @@
     width: auto;
 }
 
-.booktitle {
-    position: absolute;
-    top: 200px;
-    left: 830px;
+.title-container {
+    margin: 200px 0 0 830px;
     color: white;
     text-align: left;
     font-size: 1.2em;
+}
+
+.booktitle {
+    color: white;
+    text-align: left;
 }
 
 .booktitle__subtitle {
@@ -26,8 +28,51 @@
     padding-left: 15px;
 }
 
-.order-btn {
-    width: 200px;
-    font-size: 2em;
-    margin: 40px 20px 20px 50px;
+.link-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 60px 0 60px;
+}
+
+.link-row__link {
+    color: white;
+    font-size: 1.8em;
+    margin: 20px;
+    border-bottom: 1px solid white;
+}
+
+.questions {
+    margin: 70px 0 0 720px;
+}
+
+.questions__item {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.1em;
+    &:nth-child(2) {
+        margin-left: -70px;
+    }
+    &:nth-child(3) {
+        margin-left: -110px;
+    }
+    &:nth-child(4) {
+        margin-left: -130px;
+    }
+}
+
+.questions__pic {
+    height: 60px;
+    width: auto;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.questions__text {
+    display: inline;
+    color: white;
+    line-height: 60px;
+    margin: 0 10px;
 }
