@@ -1285,6 +1285,93 @@ footer a {
   margin: 0 10px;
 }
 
+.book-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 80px;
+  color: white;
+  font-size: 2em;
+}
+
+.book-info__title {
+  margin-bottom: 40px;
+}
+
+.book-info__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.book-info__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 30%;
+  padding: 20px;
+  border: solid 1px white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 15px -2px #FFFFFF;
+          box-shadow: 0px 0px 15px -2px #FFFFFF;
+}
+
+.cards__list {
+  text-align: left;
+  list-style: disc;
+}
+
+.book-info-long {
+  margin-top: 20px;
+}
+
+.book-info-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 800px;
+}
+
 .cta-btn {
   height: 100px;
   display: -webkit-box;
