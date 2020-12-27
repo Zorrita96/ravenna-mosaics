@@ -25,8 +25,8 @@
             <li><a class="navbar__link" href="https://matveyevajulia.art#contacts">Контакты</a></li>
             <li class="dropdown"><a class="navbar__link">Язык&nbsp;<i class="fa fa-caret-down"></i></a>
                 <div class="dropdown__list">
-                    <a class="dropdown__item" href="https://matveyevajulia.art/en/">English</a>
-                    <a class="dropdown__item" href="https://matveyevajulia.art/">Русский</a>
+                    <a class="dropdown__item" href="https://matveyevajulia.art/en/lectures.html">English</a>
+                    <a class="dropdown__item" href="https://matveyevajulia.art/lectures.html">Русский</a>
                 </div>
             </li>
             <button class="sidebar__openbtn" onclick="openNav()">&#9776;</button>
@@ -57,7 +57,7 @@
                 <div class="datelist">
                     <li class="lecture-block">
                         <div class="flag"><img class="bullet" src="ravenna-images/bullet.jpg"><div class="date">17 декабря &mdash; <br>7 января</div></div> 
-                        <div class="event"><b>Курс онлайн-лекций "Из&nbsp;бездны к&nbsp;Рождеству: иконография, формы и&nbsp;смыслы алтарного пространства"</b>
+                        <div class="event event--online"><b>Курс онлайн-лекций "Из&nbsp;бездны к&nbsp;Рождеству: иконография, формы и&nbsp;смыслы алтарного пространства"</b>
                             <br>В рамках платформы ETHOS
                             <ul class="lecture-list">
                                 <li><span class="lecture-list__date">17 декабря - 19:00</span> &mdash; Лекция&nbsp;1. Истоки формирования алтарного пространства</li>
@@ -72,6 +72,41 @@
                                 <p>Стоимость одной лекции - <strong>200 грн</strong></p>
                                 <p class="price__comment">При оплате отдельно одной лекции не&nbsp;забудьте, пожалуйста, указать в комментарии к&nbsp;оплате, какую&nbsp;из&nbsp;2&nbsp;лекций вы хотите посетить</p>
                                 <a class="price__button" href="https://secure.wayforpay.com/button/b8a9519684d2d" target="_blank">Зарегистрироваться на одну из лекций</a>
+                            </div>
+                            <div class="event-description fade-container">
+                                <div id="fade-content-1" class="event-description__text">Название курса содержит две противоположности. Бездна&nbsp;- глубина без дна, пустота, темнота и&nbsp;смерть. Рождество&nbsp;- явление и полнота Радости, спасение мира, рождение Христа&nbsp;- Света и&nbsp;Слова. Это&nbsp;те полюса, которые сквозь века создают образность алтарного пространства. Каким был путь от&nbsp;одного полюса к&nbsp;другому?
+                                    <br><br>Архитектурные и изобразительные формы всегда связаны с&nbsp;их архетипами в мироощущении, философии и богословии. Понять эти связи сегодня значит увидеть в&nbsp;простых формах смыслы и тайны богословия, которые закладывались туда изначально и были там всегда. Увидеть эти связи означает почувствовать алтарь как целостное и&nbsp;премудрое пространство, где&nbsp;творится Таинство спасения. Углубившись в&nbsp;историю формирования алтарного пространства, я&nbsp;предлагаю пройти путь из&nbsp;мрака пещеры к&nbsp;свету Рождества, чтобы вместе с&nbsp;алтарем храма это пространство всегда оставалось перед нашими глазами и в&nbsp;наших мыслях.
+                                </div>
+                                <div id="fade-overlay-1" class="fade-overlay"></div>
+                                <div class="show-more-line"><span class="show-more-circle" onclick="showMore1()"><i id="arrow-1" class="arrow arrow--down"></i></span></div>
+                                <!-- Show-more Button <div id="show-more-button-1" class="btn show-more-btn" onclick="showMore1()"><span>Развернуть</span></div>  -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="lecture-block">
+                        <div class="flag"><img class="bullet" src="../ravenna-images/bullet.jpg"><div class="date">9 января &mdash; <br>6 февраля</div></div> 
+                        <div class="event event--online"><b>Правда и иллюзии в&nbsp;древнем церковном искусстве</b>
+                            <br>Иконописная школа Украинского католического университета
+                            <ul class="lecture-list">
+                                <li><span class="lecture-list__date">9 января - 12:00 EST</span> &mdash; Лекция&nbsp;1. Странности и красота древнего искусства: верить или сомневаться?</li>
+                                <li><span class="lecture-list__date">16 января - 12:00 EST</span> &mdash; Лекция&nbsp;2. Сколько нужно видов перспективы и зачем?</li>
+                                <li><span class="lecture-list__date">23 января - 12:00 EST</span> &mdash; Лекция&nbsp;3. Пространство в иконописном произведении: простор или ограничения?</li>
+                                <li><span class="lecture-list__date">30 января - 12:00 EST</span> &mdash; Лекция&nbsp;4. Время в иконописи: история и бесконечность.</li>
+                                <li><span class="lecture-list__date">6 февраля - 12:00 EST</span> &mdash; Лекция&nbsp;5. Свет в древнем церковном искусстве: правда и иллюзии.</li>
+                            </ul>
+                            <div class="price">
+                                <p>Лекции на английском языке</p>
+                                <a class="price__button" href="https://forms.app/sacredartcenter/registration-form" target="_blank">Зарегистрироваться на курс</a>
+                            </div>
+                                <div class="event-description fade-container">
+                                <div id="fade-content-2" class="event-description__text">Этот короткий курс предлагает вам возможность изучить основы традиционной восточно-христианской иконографии и взглянуть на некоторые ее особенности. Мы рассмотрим произведения византийского и средневекового украинского искусства и попытаемся понять взаимосвязь между их богословским / духовным содержанием и художественной формой, в которой это содержание выражено. Обратимся к вопросу: почему некоторые изображения церковного искусства выглядят так странно, что невольно хочется их исправить? Традиционный ответ на этот вопрос был таким: древние художники не понимали правил композиции и анатомии человека. Однако этот ответ выглядит очень наивным и поверхностным, особенно учитывая тот факт, что данные произведения искусства отличаются высоким художественным мастерством. Что, если эти «ошибки» и «искажения» являются преднамеренными и являются частью определенного художественного языка, основанного на законах нашего визуального восприятия?
+                                    <br><br>Лекции будут посвящены этому особому языку восточно-христианского искусства, который формировался и совершенствовался на протяжении многих веков. Первоначальные замыслы древних авторов становятся очевидными, когда различные аспекты их произведений анализируются и рассматриваются как единое целое.
+                                    <br>Каждая лекция – одна грань, которая продолжает и достраивает предыдущую. Постепенно раскрывается, как мудро и просто устроены все аспекты художественного языка: формы тел и предметов, пространство, материальность, время и свет. В завершение нас ждет сюрприз – через древнее искусство мы увидим по-новому язык искусства разных времен: от Египта и античной классики до Возрождения, импрессионизма и современных мультфильмов. Что было воспринято искусством Церкви и что оно подарило миру через форму, время, пространство и свет. Курс будет интересен как для тех, кто только знакомится с церковным искусством, так и для тех, кто давно знает и любит его.
+                                </div>
+                                <div id="fade-overlay-2" class="fade-overlay"></div>
+                                <div class="show-more-line"><span class="show-more-circle" onclick="showMore2()"><i id="arrow-2" class="arrow arrow--down"></i></span></div>
+                        <!-- <div id="show-more-button-2" class="btn show-more-btn" onclick="showMore2()"><span>Развернуть</span></div> -->
                             </div>
                         </div>
                     </li>
@@ -95,11 +130,12 @@
                                 <li>Свет в древнем церковном искусстве: правда и иллюзии</li>
                             </ul>
                                 <div class="event-description fade-container">
-                                <div id="fade-content-2" class="event-description__text">Лекции раскрывают множество феноменов церковного изобразительного искусства как отточенный веками особый язык. Видеть и понимать его начинаешь, когда все разные грани собираются в единый пучок восприятия.
+                                <div id="fade-content-3" class="event-description__text">Лекции раскрывают множество феноменов церковного изобразительного искусства как отточенный веками особый язык. Видеть и понимать его начинаешь, когда все разные грани собираются в единый пучок восприятия.
                                     <br><br>Каждая лекция – одна грань, которая продолжает и достраивает предыдущую. Постепенно раскрывается, как мудро и просто устроены все аспекты художественного языка: формы тел и предметов, пространство, материальность, время и свет. В завершение нас ждет сюрприз – через древнее искусство мы увидим по-новому язык искусства разных времен: от Египта и античной классики до Возрождения, импрессионизма и современных мультфильмов. Что было воспринято искусством Церкви и что оно подарило миру через форму, время, пространство и свет.
                                     <br><br>Для всех, кто только знакомится с церковным искусством и тех, кто давно знает и любит его.</div>
-                                <div id="fade-overlay-2" class="fade-overlay"></div>
-                                <div id="show-more-button-2" class="btn show-more-btn" onclick="showMore2()"><span>Развернуть</span></div>
+                                <div id="fade-overlay-3" class="fade-overlay"></div>
+                                <div class="show-more-line"><span class="show-more-circle" onclick="showMore3()"><i id="arrow-3" class="arrow arrow--down"></i></span></div>
+                                <!-- <div id="show-more-button-2" class="btn show-more-btn" onclick="showMore3()"><span>Развернуть</span></div> -->
                             </div>
                         </div>
                     </li>
@@ -114,9 +150,10 @@
                         <div class="event"><b>"Свет Славы&nbsp;Божией в&nbsp;иконографии от&nbsp;истоков к&nbsp;развитию: богатство&nbsp;идей и&nbsp;смыслов"</b>
                             <br><b>Локация:</b> мастерская Алексея&nbsp;Козлова&nbsp;ЦХИАР, ул.&nbsp;Бульварная&nbsp;4/5
                             <div class="event-description fade-container">
-                                <div id="fade-content-3" class="event-description__text">Как изобразить Свет Славы Божией? Да&nbsp;и можно ли его изобразить? Этот&nbsp;вопрос стал перед христианами, как&nbsp;только появляются их первые украшенные храмы. Задача была не&nbsp;из легких не&nbsp;только для художников, но&nbsp;и богословов. Изображение должно было быть понятным для разных народов и&nbsp;культур, входивших постепенно в&nbsp;христианство. Какие&nbsp;формы находят художники и богословы для&nbsp;столь важной реалии божественного мира? Как&nbsp;появляется мандорла&nbsp;– Свет&nbsp;Божественной Славы вокруг всей фигуры? Какие&nbsp;тексты, реальные предметы и природные явления помогают создавать этот образ? И&nbsp;в&nbsp;результате какое богатство и разнообразие рождается в&nbsp;иконографии!</div>
-                                <div id="fade-overlay-3" class="fade-overlay"></div>
-                                <div id="show-more-button-3" class="btn show-more-btn" onclick="showMore3()"><span>Развернуть</span></div>
+                                <div id="fade-content-4" class="event-description__text">Как изобразить Свет Славы Божией? Да&nbsp;и можно ли его изобразить? Этот&nbsp;вопрос стал перед христианами, как&nbsp;только появляются их первые украшенные храмы. Задача была не&nbsp;из легких не&nbsp;только для художников, но&nbsp;и богословов. Изображение должно было быть понятным для разных народов и&nbsp;культур, входивших постепенно в&nbsp;христианство. Какие&nbsp;формы находят художники и богословы для&nbsp;столь важной реалии божественного мира? Как&nbsp;появляется мандорла&nbsp;– Свет&nbsp;Божественной Славы вокруг всей фигуры? Какие&nbsp;тексты, реальные предметы и природные явления помогают создавать этот образ? И&nbsp;в&nbsp;результате какое богатство и разнообразие рождается в&nbsp;иконографии!</div>
+                                <div id="fade-overlay-4" class="fade-overlay"></div>
+                                <div class="show-more-line"><span class="show-more-circle" onclick="showMore4()"><i id="arrow-4" class="arrow arrow--down"></i></span></div>
+                                <!-- <div id="show-more-button-4" class="btn show-more-btn" onclick="showMore3()"><span>Развернуть</span></div> -->
                             </div>
                         </div>
                     </li>        
@@ -127,7 +164,8 @@
                             <div class="event-description fade-container">
                                 <div id="fade-content-5" class="event-description__text">Велум в&nbsp;христианской иконографии! Насколько причудливы и затейливы бывают эти ткани в&nbsp;иконописи. Сегодня они кажутся предельно фантастичными элементами иконописи. Действительно, разве можно представить себе ткань, переброшенную через часть крепостной стены или&nbsp;завязанную пышным узлом на&nbsp;части здания? Чем руководствовались художники, рисуя такие ткани? Был&nbsp;ли велум когда-то реальным предметом? Как&nbsp;он использовался и&nbsp;что означал? Как&nbsp;и&nbsp;почему он стал неотъемлемым атрибутом христианской иконографии? Об&nbsp;этом всем в&nbsp;лекции Юлии&nbsp;Матвеевой.</div>
                                 <div id="fade-overlay-5" class="fade-overlay"></div>
-                                <div id="show-more-button-5" class="btn show-more-btn" onclick="showMore5()"><span>Развернуть</span></div>
+                                <div class="show-more-line"><span class="show-more-circle" onclick="showMore5()"><i id="arrow-5" class="arrow arrow--down"></i></span></div>
+                                <!--  <div id="show-more-button-5" class="btn show-more-btn" onclick="showMore5()"><span>Развернуть</span></div> -->
                             </div>
                         </div>
                     </li>        
@@ -135,9 +173,10 @@
                         <div class="flag"><img class="bullet" src="ravenna-images/bullet.jpg"><div class="date">21 марта, 14:00<br>Москва</div></div> 
                         <div class="event event--online"><b>"Конструкции и&nbsp;символика позднеантичных и средневековых покровов из&nbsp;тканей, шатров и&nbsp;завес (по&nbsp;памятникам искусства и&nbsp;текстам)"</b>
                             <div class="event-description fade-container">
-                                <div id="fade-content-4" class="event-description__text">Как много предметов из&nbsp;ткани мы видим в&nbsp;произведениях искусства! Привлекают и&nbsp;притягивают своей необычной яркостью и&nbsp;красотой, а&nbsp;иногда лишь мелькнут неуловимым намеком в изображении… Но&nbsp;всякий изображенный текстильный предмет имел свой прототип, который реально присутствовал в&nbsp;жизни и&nbsp;зрительном опыте художника. Многие образы текстильных объектов кажутся нам непонятными и&nbsp;фантастичными, потому что мир далек от&nbsp;древних практик. Увидеть наследие старинного опыта в&nbsp;создании текстильных предметов можно и&nbsp;сегодня. Нужно только внимательнее присмотреться</div>
-                                <div id="fade-overlay-4" class="fade-overlay"></div>
-                                <div id="show-more-button-4" class="btn show-more-btn" onclick="showMore4()"><span>Развернуть</span></div>
+                                <div id="fade-content-6" class="event-description__text">Как много предметов из&nbsp;ткани мы видим в&nbsp;произведениях искусства! Привлекают и&nbsp;притягивают своей необычной яркостью и&nbsp;красотой, а&nbsp;иногда лишь мелькнут неуловимым намеком в изображении… Но&nbsp;всякий изображенный текстильный предмет имел свой прототип, который реально присутствовал в&nbsp;жизни и&nbsp;зрительном опыте художника. Многие образы текстильных объектов кажутся нам непонятными и&nbsp;фантастичными, потому что мир далек от&nbsp;древних практик. Увидеть наследие старинного опыта в&nbsp;создании текстильных предметов можно и&nbsp;сегодня. Нужно только внимательнее присмотреться</div>
+                                <div id="fade-overlay-6" class="fade-overlay"></div>
+                                <div class="show-more-line"><span class="show-more-circle" onclick="showMore6()"><i id="arrow-6" class="arrow arrow--down"></i></span></div>
+                                <!-- <div id="show-more-button-6" class="btn show-more-btn" onclick="showMore6()"><span>Развернуть</span></div> -->
                             </div>    
                         </div>
                     </li>
@@ -161,9 +200,10 @@
                         <div class="event"><b>"Императрица&nbsp;Феодора: загадка женского портрета в&nbsp;алтаре и&nbsp;текст из&nbsp;тканей"</b>
                             <br><b>Локация:</b> м.&nbsp;Текстильщики (Детали по&nbsp;тел.&nbsp;89166508534 или через&nbsp;fb:&nbsp;Агнесса&nbsp;Арморик)
                             <div class="event-description fade-container">
-                                <div id="fade-content-1" class="event-description__text">Единственный женский портрет в&nbsp;алтаре за&nbsp;всю историю византийской церкви&nbsp;— знаменитый портрет императрицы Феодоры из&nbsp;церкви Сан-Витале в&nbsp;Равенне. В&nbsp;чем&nbsp;загадка этого изображения? Когда&nbsp;о&nbsp;нем говорят, часто&nbsp;обращают внимание на&nbsp;роскошные, красочные ткани, которыми заполнен портрет, пишут о&nbsp;мастерстве работы и&nbsp;богатых рисунках этих тканей, об&nbsp;их разнообразии, красках, но&nbsp;не о&nbsp;значении и&nbsp;смысле... Что&nbsp;означали эти ткани? Ведь&nbsp;это был настоящий язык того времени. Если&nbsp;мы сможем расшифровать культурный код, нам раскрывается тайна портрета, оставленная самой Феодорой…</div>
-                                <div id="fade-overlay-1" class="fade-overlay"></div>
-                                <div id="show-more-button-1" class="btn show-more-btn" onclick="showMore1()"><span>Развернуть</span></div>
+                                <div id="fade-content-7" class="event-description__text">Единственный женский портрет в&nbsp;алтаре за&nbsp;всю историю византийской церкви&nbsp;— знаменитый портрет императрицы Феодоры из&nbsp;церкви Сан-Витале в&nbsp;Равенне. В&nbsp;чем&nbsp;загадка этого изображения? Когда&nbsp;о&nbsp;нем говорят, часто&nbsp;обращают внимание на&nbsp;роскошные, красочные ткани, которыми заполнен портрет, пишут о&nbsp;мастерстве работы и&nbsp;богатых рисунках этих тканей, об&nbsp;их разнообразии, красках, но&nbsp;не о&nbsp;значении и&nbsp;смысле... Что&nbsp;означали эти ткани? Ведь&nbsp;это был настоящий язык того времени. Если&nbsp;мы сможем расшифровать культурный код, нам раскрывается тайна портрета, оставленная самой Феодорой…</div>
+                                <div id="fade-overlay-7" class="fade-overlay"></div>
+                                <div class="show-more-line"><span class="show-more-circle" onclick="showMore7()"><i id="arrow-7" class="arrow arrow--down"></i></span></div>
+                                <!-- <div id="show-more-button-7" class="btn show-more-btn" onclick="showMore7()"><span>Развернуть</span></div> -->
                             </div>
                         </div>
                     </li>
