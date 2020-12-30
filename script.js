@@ -106,11 +106,13 @@ function showMore1() {
     if (x.maxHeight === "65px" || x.maxHeight === "") {
       x.maxHeight = "none";
       document.getElementById('fade-overlay-1').style.display = "none";
-      document.getElementById('show-more-button-1').innerText = 'Свернуть';
+      document.getElementById('arrow-1').classList.toggle("arrow--up");
+      document.getElementById('arrow-1').classList.toggle("arrow--down");
     } else {
       x.maxHeight = "65px";
       document.getElementById('fade-overlay-1').style.display = "block";
-      document.getElementById('show-more-button-1').innerText = 'Развернуть';
+      document.getElementById('arrow-1').classList.toggle("arrow--up");
+      document.getElementById('arrow-1').classList.toggle("arrow--down");
     }
   }
 
@@ -119,11 +121,13 @@ function showMore2() {
   if (x.maxHeight === "65px" || x.maxHeight === "") {
     x.maxHeight = "none";
     document.getElementById('fade-overlay-2').style.display = "none";
-    document.getElementById('show-more-button-2').innerText = 'Свернуть';
+    document.getElementById('arrow-2').classList.toggle("arrow--up");
+    document.getElementById('arrow-2').classList.toggle("arrow--down");
   } else {
     x.maxHeight = "65px";
     document.getElementById('fade-overlay-2').style.display = "block";
-    document.getElementById('show-more-button-2').innerText = 'Развернуть';
+    document.getElementById('arrow-2').classList.toggle("arrow--up");
+    document.getElementById('arrow-2').classList.toggle("arrow--down");
   }
 }
 
@@ -132,11 +136,13 @@ function showMore3() {
   if (x.maxHeight === "65px" || x.maxHeight === "") {
     x.maxHeight = "none";
     document.getElementById('fade-overlay-3').style.display = "none";
-    document.getElementById('show-more-button-3').innerText = 'Свернуть';
+    document.getElementById('arrow-3').classList.toggle("arrow--up");
+    document.getElementById('arrow-3').classList.toggle("arrow--down");
   } else {
     x.maxHeight = "65px";
     document.getElementById('fade-overlay-3').style.display = "block";
-    document.getElementById('show-more-button-3').innerText = 'Развернуть';
+    document.getElementById('arrow-3').classList.toggle("arrow--up");
+    document.getElementById('arrow-3').classList.toggle("arrow--down");
   }
 }
 
@@ -145,11 +151,13 @@ function showMore4() {
   if (x.maxHeight === "65px" || x.maxHeight === "") {
     x.maxHeight = "none";
     document.getElementById('fade-overlay-4').style.display = "none";
-    document.getElementById('show-more-button-4').innerText = 'Свернуть';
+    document.getElementById('arrow-4').classList.toggle("arrow--up");
+    document.getElementById('arrow-4').classList.toggle("arrow--down");
   } else {
     x.maxHeight = "65px";
     document.getElementById('fade-overlay-4').style.display = "block";
-    document.getElementById('show-more-button-4').innerText = 'Развернуть';
+    document.getElementById('arrow-4').classList.toggle("arrow--up");
+    document.getElementById('arrow-4').classList.toggle("arrow--down");
   }
 }
 
@@ -158,10 +166,42 @@ function showMore5() {
   if (x.maxHeight === "65px" || x.maxHeight === "") {
     x.maxHeight = "none";
     document.getElementById('fade-overlay-5').style.display = "none";
-    document.getElementById('show-more-button-5').innerText = 'Свернуть';
+    document.getElementById('arrow-5').classList.toggle("arrow--up");
+    document.getElementById('arrow-5').classList.toggle("arrow--down");
   } else {
     x.maxHeight = "65px";
     document.getElementById('fade-overlay-5').style.display = "block";
-    document.getElementById('show-more-button-5').innerText = 'Развернуть';
+    document.getElementById('arrow-5').classList.toggle("arrow--up");
+    document.getElementById('arrow-5').classList.toggle("arrow--down");
+  }
+}
+
+function showMore6() {
+  let x = document.getElementById("fade-content-6").style;
+  if (x.maxHeight === "65px" || x.maxHeight === "") {
+    x.maxHeight = "none";
+    document.getElementById('fade-overlay-6').style.display = "none";
+    document.getElementById('arrow-6').classList.toggle("arrow--up");
+    document.getElementById('arrow-6').classList.toggle("arrow--down");
+  } else {
+    x.maxHeight = "65px";
+    document.getElementById('fade-overlay-6').style.display = "block";
+    document.getElementById('arrow-6').classList.toggle("arrow--up");
+    document.getElementById('arrow-6').classList.toggle("arrow--down");
+  }
+}
+
+function showMore7() {
+  let x = document.getElementById("fade-content-7").style;
+  if (x.maxHeight === "65px" || x.maxHeight === "") {
+    x.maxHeight = "none";
+    document.getElementById('fade-overlay-7').style.display = "none";
+    document.getElementById('arrow-7').classList.toggle("arrow--up");
+    document.getElementById('arrow-7').classList.toggle("arrow--down");
+  } else {
+    x.maxHeight = "65px";
+    document.getElementById('fade-overlay-7').style.display = "block";
+    document.getElementById('arrow-7').classList.toggle("arrow--up");
+    document.getElementById('arrow-7').classList.toggle("arrow--down");
   }
 }
