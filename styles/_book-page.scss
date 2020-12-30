@@ -88,24 +88,34 @@
 .book-info__title {
     margin-bottom: 40px;
 }
-
-.book-info__container {
+/*
+.book-info__wrap {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+} */
 
 .book-info__text {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
     margin-right: 40px;
+    background-image: url("../ravenna-images/smartmockups_kivnh10j_bright.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 500px;
+}
+
+.book-info-cover {
+    max-width: 50%;
 }
 
 .cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 80px;
+    color: white;
+    font-size: 2em;
 }
 
 .cards__item {

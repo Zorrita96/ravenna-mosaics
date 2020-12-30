@@ -1348,19 +1348,10 @@ footer a {
   margin-bottom: 40px;
 }
 
-.book-info__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
+/*
+.book-info__wrap {
+    display: flex;
+} */
 .book-info__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1371,6 +1362,15 @@ footer a {
           flex-direction: column;
   margin-left: 40px;
   margin-right: 40px;
+  background-image: url("../ravenna-images/smartmockups_kivnh10j_bright.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 500px;
+}
+
+.book-info-cover {
+  max-width: 50%;
 }
 
 .cards {
@@ -1384,6 +1384,9 @@ footer a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 80px;
+  color: white;
+  font-size: 2em;
 }
 
 .cards__item {
