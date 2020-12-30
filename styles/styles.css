@@ -1394,19 +1394,40 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 30%;
-  padding: 20px;
-  border: solid 1px white;
+  border: solid 1px black;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 15px -2px #FFFFFF;
-          box-shadow: 0px 0px 15px -2px #FFFFFF;
+  -webkit-box-shadow: 0px 0px 20px 3px #f0da92;
+          box-shadow: 0px 0px 20px 3px #f0da92;
+}
+
+.cards__text {
+  padding: 20px;
+}
+
+.cards__title {
+  font-size: 2em;
+  margin: 10px 0 10px 0;
+  font-weight: bold;
 }
 
 .cards__list {
   text-align: left;
   list-style: disc;
+  list-style-position: inside;
 }
 
+.cards__listitem {
+  padding: 5px;
+}
+
+/*
+.cards__picture {
+    height: 20%;
+} */
 .book-info-long {
   margin-top: 20px;
 }
