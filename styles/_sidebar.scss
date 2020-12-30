@@ -5,7 +5,7 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: var(--cherry);
+    background-color: $maroon;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -45,7 +45,7 @@
     display: none;
     font-size: 30px;
     cursor: pointer;
-    background-color: var(--cherry);
+    background-color: $maroon;
     color: white;
     border: none;
     padding: 0 20px;
