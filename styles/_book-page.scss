@@ -1,25 +1,31 @@
 .bookpage {
     background-color: $maroon;
+    font-family: $main-font;
 }
 
 .cupola {
     position: absolute;
     top: -510px;
-    left: -575px;
+    right: 33%;
     height: 1500px;
     width: auto;
 }
 
 .title-container {
-    margin: 200px 0 0 830px;
+    /*margin: 200px 0 0 830px; */
+    position: relative;
+    top: 200px;
+    right: -63%;
     color: white;
     text-align: left;
     font-size: 1.2em;
+    max-width: 500px;
 }
 
 .booktitle {
     color: white;
     text-align: left;
+    font-family: $heading-font;
 }
 
 .booktitle__subtitle {
@@ -43,7 +49,11 @@
 }
 
 .questions {
-    margin: 70px 0 0 720px;
+    /*margin: 70px 0 0 720px; */
+    font-family: $heading-font;
+    position: absolute;
+    top: 700px;
+    right: 20%;
 }
 
 .questions__item {
@@ -66,8 +76,9 @@
 .questions__pic {
     height: 60px;
     width: auto;
-    border: 3px solid white;
+    border: 1px solid black;
     border-radius: 50%;
+    box-shadow: 0px 0px 20px 3px $golden;
 }
 
 .questions__text {
@@ -82,40 +93,45 @@
     flex-direction: column;
     margin: 80px;
     color: white;
-    font-size: 2em;
+    font-size: 1.7em;
+    margin-top: 1000px;
 }
 
 .book-info__title {
     margin-bottom: 40px;
+    font-size: 2em;
+    font-family: $heading-font;
 }
-/*
+
 .book-info__wrap {
     display: flex;
-} */
+}
 
 .book-info__text {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
     margin-right: 40px;
-    background-image: url("../ravenna-images/smartmockups_kivnh10j_bright.png");
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    height: 500px;
+    text-align: left;
+    font-family: $main-font;
 }
+/*background-image: url("../ravenna-images/smartmockups_kivnh10j_bright.png");
+    background-position: right bottom;
+    background-repeat: no-repeat; 
+    background-size: 50%;
+    height: 500px; */
 
 .book-info-cover {
-    max-width: 50%;
+    min-width: 30%;
 }
 
 .cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 80px;
+    margin: 80px 160px;
     color: white;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 .cards__item {
@@ -136,6 +152,7 @@
     font-size: 2em;
     margin: 10px 0 10px 0;
     font-weight: bold;
+    font-family: $heading-font;
 }
 
 .cards__list {
@@ -146,17 +163,4 @@
 
 .cards__listitem {
     padding: 5px;
-}
-/*
-.cards__picture {
-    height: 20%;
-} */
-
-.book-info-long {
-    margin-top: 20px;
-}
-
-.book-info-cover {
-    display: flex;
-    max-width: 800px;
 }

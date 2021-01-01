@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: #e2e2e2;
-  font-family: "Cormorant Infant", serif;
+  font-family: "Cormorant Infant", serif, serif;
   font-size: 10px;
   color: black;
   width: 100%;
@@ -1239,26 +1239,32 @@ footer a {
 
 .bookpage {
   background-color: #261414;
+  font-family: "Philosopher", sans-serif;
 }
 
 .cupola {
   position: absolute;
   top: -510px;
-  left: -575px;
+  right: 33%;
   height: 1500px;
   width: auto;
 }
 
 .title-container {
-  margin: 200px 0 0 830px;
+  /*margin: 200px 0 0 830px; */
+  position: relative;
+  top: 200px;
+  right: -63%;
   color: white;
   text-align: left;
   font-size: 1.2em;
+  max-width: 500px;
 }
 
 .booktitle {
   color: white;
   text-align: left;
+  font-family: "Cormorant Infant", serif;
 }
 
 .booktitle__subtitle {
@@ -1289,7 +1295,11 @@ footer a {
 }
 
 .questions {
-  margin: 70px 0 0 720px;
+  /*margin: 70px 0 0 720px; */
+  font-family: "Cormorant Infant", serif;
+  position: absolute;
+  top: 700px;
+  right: 20%;
 }
 
 .questions__item {
@@ -1320,8 +1330,10 @@ footer a {
 .questions__pic {
   height: 60px;
   width: auto;
-  border: 3px solid white;
+  border: 1px solid black;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px 3px #f0da92;
+          box-shadow: 0px 0px 20px 3px #f0da92;
 }
 
 .questions__text {
@@ -1341,17 +1353,22 @@ footer a {
           flex-direction: column;
   margin: 80px;
   color: white;
-  font-size: 2em;
+  font-size: 1.7em;
+  margin-top: 1000px;
 }
 
 .book-info__title {
   margin-bottom: 40px;
+  font-size: 2em;
+  font-family: "Cormorant Infant", serif;
 }
 
-/*
 .book-info__wrap {
-    display: flex;
-} */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .book-info__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1362,15 +1379,17 @@ footer a {
           flex-direction: column;
   margin-left: 40px;
   margin-right: 40px;
-  background-image: url("../ravenna-images/smartmockups_kivnh10j_bright.png");
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  height: 500px;
+  text-align: left;
+  font-family: "Philosopher", sans-serif;
 }
 
+/*background-image: url("../ravenna-images/smartmockups_kivnh10j_bright.png");
+    background-position: right bottom;
+    background-repeat: no-repeat; 
+    background-size: 50%;
+    height: 500px; */
 .book-info-cover {
-  max-width: 50%;
+  min-width: 30%;
 }
 
 .cards {
@@ -1384,9 +1403,9 @@ footer a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 80px;
+  margin: 80px 160px;
   color: white;
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .cards__item {
@@ -1415,6 +1434,7 @@ footer a {
   font-size: 2em;
   margin: 10px 0 10px 0;
   font-weight: bold;
+  font-family: "Cormorant Infant", serif;
 }
 
 .cards__list {
@@ -1425,21 +1445,6 @@ footer a {
 
 .cards__listitem {
   padding: 5px;
-}
-
-/*
-.cards__picture {
-    height: 20%;
-} */
-.book-info-long {
-  margin-top: 20px;
-}
-
-.book-info-cover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 800px;
 }
 
 .cta-btn {
@@ -1584,5 +1589,176 @@ footer a {
   width: 200px;
   font-size: 2em;
   margin: 40px 20px 20px 50px;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px;
+  color: white;
+}
+
+#fs-frm {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::-webkit-input-placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: baseline;
+          align-items: baseline;
+}
+
+#fs-frm label,
+#fs-frm legend,
+#fs-frm :-ms-input-placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::-ms-input-placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
 }
 /*# sourceMappingURL=styles.css.map */
