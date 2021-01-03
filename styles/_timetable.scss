@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: white;
     align-items: center;
-    color: var(--brown);
+    color: $brown;
   }
   
   .timetable h2 {
@@ -43,7 +43,7 @@
   
   .stayhome__link {
     text-decoration: underline;
-    color: var(--maroon)
+    color: $cherry;
   }
   
   @media (max-width: 860px) {
@@ -244,7 +244,7 @@
   }
   
   .show-more-btn {
-      color: var(--brown);
+      color: $brown;
       transition: all 0.3s;
     position: relative;
     margin-top: 10px;
@@ -266,8 +266,8 @@
       border-bottom-width: 1px;
       border-top-style: solid;
       border-bottom-style: solid;
-      border-top-color: var(--brown);
-      border-bottom-color: var(--brown);
+      border-top-color: $brown;
+      border-bottom-color: $brown;
       transform: scale(0.1, 1);
   }
   .show-more-btn:hover span {
@@ -300,20 +300,20 @@
   .event--cancelled::before {
     content: "Лекция отменена в связи с карантином";
     display: block;
-    color: var(--maroon);
+    color: $cherry;
     font-weight: bold;
   }
   
   .event--online::before {
     content: "Онлайн-лекция";
     display: block;
-    color: var(--maroon);
+    color: $cherry;
     font-weight: bold;
   }
 
   .event--online-en::before {
     content: "Online event";
     display: block;
-    color: var(--maroon);
+    color: $cherry;
     font-weight: bold;
   }
