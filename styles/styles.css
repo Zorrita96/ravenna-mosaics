@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: #e2e2e2;
-  font-family: 'Cormorant Infant', serif;
+  font-family: "PT Serif", serif;
   font-size: 10px;
   color: black;
   width: 100%;
@@ -349,6 +349,7 @@ section {
   color: white;
   font-size: 1.6em;
   text-shadow: 1px 1px 20px black;
+  font-family: "Cormorant Infant", serif;
 }
 
 .title__upper {
@@ -385,8 +386,7 @@ img {
 }
 
 .book-description {
-  font-size: 2.3em;
-  font-weight: bold;
+  font-size: 1.6em;
   text-align: justify;
   color: #553300;
   margin-right: 30px;
@@ -394,6 +394,7 @@ img {
 
 .book-description h2 {
   text-align: center;
+  font-family: "Cormorant Infant", serif;
 }
 
 @media (max-width: 1100px) {
@@ -453,6 +454,7 @@ img {
 
 .auth-descr__headline {
   text-align: center;
+  font-family: "Cormorant Infant", serif;
 }
 
 .auth-descr__list {
@@ -657,6 +659,7 @@ img {
 .timetable h2 {
   font-size: 3.5em;
   margin-bottom: 40px;
+  font-family: "Cormorant Infant", serif;
 }
 
 .afisha {
@@ -1057,11 +1060,12 @@ img {
   font-size: 4em;
   color: #f0da92;
   margin-top: 40px;
+  font-family: "Cormorant Infant", serif;
 }
 
 .contact-text {
   color: white;
-  font-size: 3em;
+  font-size: 2.2em;
   max-width: 60%;
 }
 
@@ -1096,7 +1100,7 @@ img {
 }
 
 .social p {
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   margin: 0;
 }
@@ -1250,6 +1254,7 @@ footer a {
           justify-content: center;
   -webkit-font-smoothing: antialiased;
   padding-top: 30vh;
+  font-family: "Cormorant Infant", serif;
 }
 
 .cta-btn__link {

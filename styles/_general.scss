@@ -13,7 +13,7 @@ $maroon: rgb(38, 20, 20);
 $cherry: rgb(167, 0, 0);
 
 $heading-font: 'Cormorant Infant', serif;
-$main-font: 'Philosopher', sans-serif;
+$main-font: 'PT Serif', serif;
 
 html {
   scroll-behavior: smooth;
@@ -21,7 +21,7 @@ html {
   
 body {
   background-color: #e2e2e2;
-  font-family: 'Cormorant Infant', serif;
+  font-family: $main-font;
   font-size: 10px;
   color: black;
   width: 100%;
