@@ -123,23 +123,6 @@
     font-size: 0.6em;
     max-width: 700px;
   }
-
-  .price__button {
-    display: block;
-    width: 350px;
-    background-color: var(--cherry);
-    border: 3px solid var(--cherry);
-    border-radius: 3px;
-    padding: 5px;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    &:hover {
-      background-color: white;
-      color: var(--cherry);
-    }
-  }
   
   @media (max-width: 800px) {
     .datelist li {
