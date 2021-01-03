@@ -1245,16 +1245,16 @@ footer a {
 .cupola {
   position: absolute;
   top: -510px;
-  right: 33%;
+  right: 450px;
   height: 1500px;
   width: auto;
 }
 
 .title-container {
   /*margin: 200px 0 0 830px; */
-  position: relative;
+  position: absolute;
   top: 200px;
-  right: -63%;
+  right: 90px;
   color: white;
   text-align: left;
   font-size: 1.2em;
@@ -1298,8 +1298,8 @@ footer a {
   /*margin: 70px 0 0 720px; */
   font-family: "Cormorant Infant", serif;
   position: absolute;
-  top: 700px;
-  right: 20%;
+  top: 630px;
+  right: 140px;
 }
 
 .questions__item {
@@ -1354,7 +1354,7 @@ footer a {
   margin: 80px;
   color: white;
   font-size: 1.7em;
-  margin-top: 1000px;
+  margin-top: 1050px;
 }
 
 .book-info__title {
@@ -1599,35 +1599,30 @@ footer a {
   color: white;
 }
 
-#fs-frm {
+.fs-frm {
   border: 2px solid white;
   border-radius: 3px;
   padding: 20px;
+  max-width: 50%;
 }
 
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm fieldset,
-#fs-frm optgroup,
-#fs-frm label,
-#fs-frm #card-element:disabled {
-  font-family: inherit;
-  font-size: 100%;
-  color: inherit;
+.fs-frm input,
+.fs-frm select,
+.fs-frm textarea,
+.fs-frm fieldset,
+.fs-frm optgroup,
+.fs-frm label {
   border: none;
-  border-radius: 0;
+  border-radius: 3px;
   display: block;
   width: 100%;
   padding: 0;
   margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
-#fs-frm label,
-#fs-frm legend,
-#fs-frm ::-webkit-input-placeholder {
+.fs-frm label,
+.fs-frm legend,
+.fs-frm ::-webkit-input-placeholder {
   font-size: .825rem;
   margin-bottom: .5rem;
   padding-top: .2rem;
@@ -1637,9 +1632,9 @@ footer a {
           align-items: baseline;
 }
 
-#fs-frm label,
-#fs-frm legend,
-#fs-frm :-ms-input-placeholder {
+.fs-frm label,
+.fs-frm legend,
+.fs-frm :-ms-input-placeholder {
   font-size: .825rem;
   margin-bottom: .5rem;
   padding-top: .2rem;
@@ -1649,9 +1644,9 @@ footer a {
       align-items: baseline;
 }
 
-#fs-frm label,
-#fs-frm legend,
-#fs-frm ::-ms-input-placeholder {
+.fs-frm label,
+.fs-frm legend,
+.fs-frm ::-ms-input-placeholder {
   font-size: .825rem;
   margin-bottom: .5rem;
   padding-top: .2rem;
@@ -1661,9 +1656,9 @@ footer a {
       align-items: baseline;
 }
 
-#fs-frm label,
-#fs-frm legend,
-#fs-frm ::placeholder {
+.fs-frm label,
+.fs-frm legend,
+.fs-frm ::placeholder {
   font-size: .825rem;
   margin-bottom: .5rem;
   padding-top: .2rem;
@@ -1675,20 +1670,23 @@ footer a {
           align-items: baseline;
 }
 
+.fs-frm label {
+  font-size: 1.5em;
+}
+
 /* border, padding, margin, width */
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm #card-element {
+.fs-frm input,
+.fs-frm select,
+.fs-frm textarea {
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
   padding: .75em 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
-#fs-frm input:focus,
-#fs-frm select:focus,
-#fs-frm textarea:focus {
+.fs-frm input:focus,
+.fs-frm select:focus,
+.fs-frm textarea:focus {
   background-color: white;
   outline-style: solid;
   outline-width: thin;
@@ -1696,14 +1694,14 @@ footer a {
   outline-offset: -1px;
 }
 
-#fs-frm [type="text"],
-#fs-frm [type="email"] {
+/*
+.fs-frm [type="text"],
+.fs-frm [type="email"] {
   width: 100%;
-}
-
-#fs-frm [type="button"],
-#fs-frm [type="submit"],
-#fs-frm [type="reset"] {
+} */
+.fs-frm [type="button"],
+.fs-frm [type="submit"],
+.fs-frm [type="reset"] {
   width: auto;
   cursor: pointer;
   -webkit-appearance: button;
@@ -1711,54 +1709,79 @@ footer a {
   appearance: button;
 }
 
-#fs-frm [type="button"]:focus,
-#fs-frm [type="submit"]:focus,
-#fs-frm [type="reset"]:focus {
+.fs-frm [type="button"]:focus,
+.fs-frm [type="submit"]:focus,
+.fs-frm [type="reset"]:focus {
   outline: none;
 }
 
-#fs-frm [type="submit"],
-#fs-frm [type="reset"] {
+.fs-frm [type="submit"],
+.fs-frm [type="reset"] {
   margin-bottom: 0;
 }
 
-#fs-frm select {
-  text-transform: none;
-}
-
-#fs-frm [type="checkbox"] {
+.fs-frm [type="checkbox"] {
   -webkit-appearance: checkbox;
-  -moz-appearance: checkbox;
-  appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
   display: inline-block;
   width: auto;
   margin: 0 .5em 0 0 !important;
 }
 
-#fs-frm [type="radio"] {
+.fs-frm [type="radio"] {
   -webkit-appearance: radio;
-  -moz-appearance: radio;
-  appearance: radio;
+     -moz-appearance: radio;
+          appearance: radio;
+}
+
+.fs-frm select {
+  text-transform: none;
+}
+
+.locale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-block {
+  margin-right: 10px;
+}
+
+.fs-frm textarea {
+  resize: vertical;
 }
 
 /* address, locale */
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
+/*
+.fs-frm .locale input[name="city"],
+.fs-frm .locale select[name="country"],
+.fs-frm .locale input[name="num-of-books"] {
   display: inline;
-}
-
-#fs-frm fieldset.locale input[name="city"] {
+} */
+/*
+.fs-frm fieldset.locale input[name="city"] {
   width: 52%;
-}
-
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
+} */
+/*
+.fs-frm fieldset.locale select[name="country"],
+.fs-frm fieldset.locale input[name="postal-code"] {
   width: 20%;
-}
-
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"] {
+} */
+/*
+.fs-frm fieldset.locale input[name="city"],
+.fs-frm fieldset.locale select[name="country"] {
   margin-right: 3%;
 }
+
+.fs-frm fieldset.number-of-books {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+} */
+/*
+.fs-frm input[name="num-of-books"] {
+  width: auto;
+} */
 /*# sourceMappingURL=styles.css.map */
