@@ -43,7 +43,7 @@ for (lectureBlock of lectureBlocks) {
       document.getElementById('video_overlay-1').style.display = 'none';
     }
     else {
-    let lightBoxVideo = document.getElementById("video-1"); 
+    //let lightBoxVideo = document.getElementById("video-1"); 
     document.getElementById('fs-frm_lightbox').style.display = 'block';
     document.getElementById('fs-frm_fade').style.display = 'block';
     //lightBoxVideo.play();
@@ -51,7 +51,7 @@ for (lectureBlock of lectureBlocks) {
   }
 
   function lightbox_form_close() {
-    let lightBoxVideo = document.getElementById("video-1");
+    //let lightBoxVideo = document.getElementById("video-1");
     document.getElementById('fs-frm_lightbox').style.display = 'none';
     document.getElementById('fs-frm_fade').style.display = 'none';
     //lightBoxVideo.pause();

@@ -5,10 +5,14 @@
 }
 
 .fs-frm {
-    border: 2px solid white;
-    border-radius: 3px;
-    padding: 20px;
-    max-width: 50%;
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 20px;
+  max-width: 50%;
+  &--lightbox {
+    max-width: none;
+    font-family: $main-font;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -59,6 +63,9 @@
   padding: .75em 1rem;
   margin-bottom: 1.1rem;
   color: gray;
+  &--lightbox {
+    border: 1px solid rgba(0,0,0,0.2);
+  }
 }
 
 .fs-frm__textarea {
@@ -162,4 +169,9 @@
   font-family: $heading-font;
   margin-right: auto;
   margin-left: auto;
+  &--lightbox {
+    font-size: 1.2em;
+    font-family: $main-font;
+    font-weight: normal;
+  }
 }

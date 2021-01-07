@@ -79,12 +79,11 @@
         <p>You will find answers to these and many more questions in the book</p>
         <p>Decorative&nbsp;Fabrics in&nbsp;the&nbsp;Mosaics of&nbsp;Ravenna</p>
         <p>by Dr. Julia Matveyeva</p>
-        <a class="basic-btn basic-btn--maroon" onclick="lightbox_form_open();" href="#">Order book</a>
+        <a class="basic-btn basic-btn--maroon" onclick="lightbox_form_open();">Order book</a>
         <p>This book is the&nbsp;first monograph on&nbsp;the&nbsp;world of&nbsp;fabrics in&nbsp;the&nbsp;early Byzantine church. It&nbsp;is based on&nbsp;the&nbsp;famous Ravenna mosaics of&nbsp;V&#8209;VII&nbsp;century, declared to&nbsp;be classical and&nbsp;included in&nbsp;the&nbsp;UNESCO world heritage. Despite the&nbsp;wide popularity of&nbsp;the&nbsp;images themselves, the&nbsp;abundance of&nbsp;fabrics in&nbsp;them remained a&nbsp;mystery. Meanwhile, it&nbsp;is&nbsp;these mosaics that keep almost the&nbsp;only visual evidence of&nbsp;textile use in&nbsp;the&nbsp;ancient church. The&nbsp;research is&nbsp;unique in&nbsp;decoding the&nbsp;images of&nbsp;fabrics like a&nbsp;living language, due&nbsp;to&nbsp;their correlation with&nbsp;authentic Greek texts. The&nbsp;material obtained gradually reveals the&nbsp;historical, symbolic and&nbsp;theological meaning of&nbsp;the&nbsp;depicted textile objects. Understanding the&nbsp;role of&nbsp;what seemed to&nbsp;be "simple pieces of&nbsp;textile" suddenly opens for&nbsp;us a&nbsp;whole world of&nbsp;living, strong and&nbsp;ardent faith of&nbsp;the&nbsp;people of&nbsp;that time, fills the&nbsp;familiar classical mosaics with&nbsp;real stories and&nbsp;human destinies. The&nbsp;fabrics turn&nbsp;out to&nbsp;be the&nbsp;language of&nbsp;the&nbsp;precise and&nbsp;vivid messages of&nbsp;Christians, which&nbsp;reached us&nbsp;from&nbsp;ancient times. &nbsp;are just&nbsp;to&nbsp;start reading&nbsp;it...</p>
-        <div id="fs-frm_lightbox" class="lightbox__light">
+        <div id="fs-frm_lightbox" class="lightbox__light lightbox__light--form">
             <!-- Lightbox Content-->
-            <div class="contact-form">
-                <form class="fs-frm" id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/myybprbn" method="post">
+                <form class="fs-frm fs-frm--lightbox" id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/myybprbn" method="post">
                     <fieldset class="fs-frm__fieldset" id="fs-frm-inputs">
                         <div class="form-row">
                             <div class="form-block">
@@ -99,7 +98,7 @@
                       
                         <div class="form-block form-block--select">
                         <label class="fs-frm__label" for="country">Country</label>
-                        <select class="fs-frm__select" id="country" name="country" required>
+                        <select class="fs-frm__select fs-frm__select--lightbox" id="country" name="country" required>
                           <option value="Select" selected="" disabled="">Country</option>
                           <option value="Afghanistan">Afghanistan</option>
                           <option value="Åland Islands">Åland Islands</option>
@@ -364,20 +363,12 @@
                         <textarea class="fs-frm__textarea" rows="4" name="note" id="note" placeholder="Include any additional information"></textarea>
                         <input type="hidden" name="_subject" id="email-subject" value="Book Order - Decorative Fabrics">
                     </fieldset>
-                    <input class="basic-btn basic-btn--white fs-frm__button" type="submit" value="Order Book">
+                    <input class="basic-btn basic-btn--maroon fs-frm__button fs-frm__button--lightbox" type="submit" value="Order Book">
                   </form>
-            <div>
         </div>
         <div id="fs-frm_fade" class="lightbox__fade" onClick="lightbox_form_close();">
-            <a class="lightbox__closex" onclick="lightbox_form_close();"></a>
+            <a class="lightbox__closex lightbox__closex--form" onclick="lightbox_form_close();"></a>
         </div>
-        <!--<div id="video_wrapper-1" class="video__wrapper">
-            <iframe class="wrapper__iframe" width="560" height="315" src="https://www.youtube.com/embed/I9l1e0hVhak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div> -->
-        <!--<div id="video_overlay-1" class="video__overlay">
-            <img class="video__img" src="../ravenna-images/video_overlay_tkani_crop0.jpg" alt="Mysteries of narrative fabrics">
-            <div class="video__icon-container" onclick="lightbox_open1();"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
-        </div> -->
     </div>
 </section>
 
