@@ -44,17 +44,17 @@ for (lectureBlock of lectureBlocks) {
     }
     else {
     let lightBoxVideo = document.getElementById("video-1"); 
-    document.getElementById('light-1').style.display = 'block';
-    document.getElementById('fade-1').style.display = 'block';
-    lightBoxVideo.play();
+    document.getElementById('fs-frm_lightbox').style.display = 'block';
+    document.getElementById('fs-frm_fade').style.display = 'block';
+    //lightBoxVideo.play();
     }
   }
 
   function lightbox_form_close() {
     let lightBoxVideo = document.getElementById("video-1");
-    document.getElementById('light-1').style.display = 'none';
-    document.getElementById('fade-1').style.display = 'none';
-    lightBoxVideo.pause();
+    document.getElementById('fs-frm_lightbox').style.display = 'none';
+    document.getElementById('fs-frm_fade').style.display = 'none';
+    //lightBoxVideo.pause();
   }
 
 /*=============================
