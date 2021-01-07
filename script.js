@@ -34,6 +34,30 @@ for (lectureBlock of lectureBlocks) {
   }
 
 /*=============================
+      CONTACT FORM LIGHTBOX
+=============================*/
+
+  function lightbox_form_open() {
+    if (window.matchMedia("(max-width: 800px)").matches) {
+      document.getElementById('video_wrapper-1').style.display = 'block';
+      document.getElementById('video_overlay-1').style.display = 'none';
+    }
+    else {
+    let lightBoxVideo = document.getElementById("video-1"); 
+    document.getElementById('light-1').style.display = 'block';
+    document.getElementById('fade-1').style.display = 'block';
+    lightBoxVideo.play();
+    }
+  }
+
+  function lightbox_form_close() {
+    let lightBoxVideo = document.getElementById("video-1");
+    document.getElementById('light-1').style.display = 'none';
+    document.getElementById('fade-1').style.display = 'none';
+    lightBoxVideo.pause();
+  }
+
+/*=============================
          VIDEO LIGHTBOX
 =============================*/
   
