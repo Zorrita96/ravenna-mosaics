@@ -10,8 +10,11 @@
   padding: 20px;
   max-width: 50%;
   &--lightbox {
-    max-width: none;
+    margin: auto;
+    display: block;
+    max-width: 500px;
     font-family: $main-font;
+    background-color: white;
   }
 }
 
@@ -19,10 +22,6 @@
   .contact-form {
     flex-direction: column;
     align-items: center;
-  }
-
-  .fs-frm {
-    max-width: 100%;
   }
 }
 
@@ -47,7 +46,7 @@
   padding: 0;
   margin: 0;
   border: 1px solid rgba(0,0,0,0.2);
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(0, 0, 0, 0.1);
   padding: .75em 1rem;
   margin-bottom: 1.1rem;
 }
@@ -59,7 +58,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(0, 0, 0, 0.1);
   padding: .75em 1rem;
   margin-bottom: 1.1rem;
   color: gray;
@@ -75,7 +74,7 @@
   padding: 0;
   margin: 0;
   border: 1px solid rgba(0,0,0,0.2);
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(0, 0, 0, 0.1);
   padding: .75em 1rem;
   margin-bottom: 1.1rem;
   resize: vertical;
@@ -170,7 +169,7 @@
   margin-right: auto;
   margin-left: auto;
   &--lightbox {
-    font-size: 1.2em;
+    font-size: 1.8em;
     font-family: $main-font;
     font-weight: normal;
   }

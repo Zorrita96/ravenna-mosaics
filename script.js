@@ -37,25 +37,13 @@ for (lectureBlock of lectureBlocks) {
       CONTACT FORM LIGHTBOX
 =============================*/
 
-  function lightbox_form_open() {
-    if (window.matchMedia("(max-width: 800px)").matches) {
-      document.getElementById('video_wrapper-1').style.display = 'block';
-      document.getElementById('video_overlay-1').style.display = 'none';
-    }
-    else {
-    //let lightBoxVideo = document.getElementById("video-1"); 
-    document.getElementById('fs-frm_lightbox').style.display = 'block';
-    document.getElementById('fs-frm_fade').style.display = 'block';
-    //lightBoxVideo.play();
-    }
-  }
+function lightbox_form_open() {
+    document.getElementById('myModal').style.display = 'block';
+}
 
-  function lightbox_form_close() {
-    //let lightBoxVideo = document.getElementById("video-1");
-    document.getElementById('fs-frm_lightbox').style.display = 'none';
-    document.getElementById('fs-frm_fade').style.display = 'none';
-    //lightBoxVideo.pause();
-  }
+function lightbox_form_close() {
+    document.getElementById('myModal').style.display = 'none';
+}
 
 /*=============================
          VIDEO LIGHTBOX
