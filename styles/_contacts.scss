@@ -27,8 +27,9 @@
   
   .contacts h2 {
     font-size: 4em;
-    color: var(--golden);
+    color: $golden;
     margin-top: 40px;
+    font-family: $heading-font;
   }
   
   .contact-text {
@@ -62,8 +63,8 @@
   .icon {
     font-size: 7em;
     margin: 20px;
-    color: var(--darkblue);
-    background-color: var(--golden);
+    color: $darkblue;
+    background-color: $golden;
     border-radius: 50%;
     width: 120px;
     height: 120px;

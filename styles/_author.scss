@@ -1,7 +1,7 @@
 .author {
     display: flex;
     flex-direction: column;
-    background-color: var(--cherry);
+    background-color: $maroon;
     align-items: top;
   } 
   
@@ -26,6 +26,7 @@
   
   .auth-descr__headline {
     text-align: center;
+    font-family: $heading-font;
   }
   
   .auth-descr__list {
@@ -155,6 +156,46 @@
     z-index: 1002;
     overflow: visible;
   }
+
+  .lightbox--form {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  .lightbox-close--form {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 6em;
+    font-weight: bold;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 525px) {
+    .lightbox--form {
+      padding-top: 60px;
+    }
+
+    .lightbox-close--form {
+      top: 5px;
+    }
+  }
   
   .lightbox__iframe {
     width: 560px;
@@ -173,6 +214,9 @@
     top: 5px;
     z-index: 1002;
     opacity: 0.9;
+    &--form {
+      font-size: 7em;
+    }
   }
   
   .lightbox__closex:before {

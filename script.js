@@ -34,6 +34,18 @@ for (lectureBlock of lectureBlocks) {
   }
 
 /*=============================
+      CONTACT FORM LIGHTBOX
+=============================*/
+
+function lightbox_form_open() {
+    document.getElementById('myModal').style.display = 'block';
+}
+
+function lightbox_form_close() {
+    document.getElementById('myModal').style.display = 'none';
+}
+
+/*=============================
          VIDEO LIGHTBOX
 =============================*/
   
