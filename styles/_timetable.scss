@@ -15,7 +15,6 @@
   .afisha {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   
   .stayhome {
@@ -306,7 +305,7 @@
   }
   
   .event--online::before {
-    content: "Онлайн-лекция";
+    content: "Онлайн";
     display: block;
     color: $cherry;
     font-weight: bold;
