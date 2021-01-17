@@ -765,6 +765,29 @@ img {
   width: 100%;
 }
 
+.book-price {
+  font-size: 2em;
+  font-family: "PT Serif", serif;
+}
+
+.book-price__money {
+  margin-bottom: 10px;
+}
+
+.book-price__text {
+  margin: 0;
+}
+
+.book-price__text--old-price {
+  text-decoration: line-through;
+}
+
+.book-price__text--new-price {
+  color: #a70000;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
 @media (max-width: 900px) {
   .book-cover {
     margin: 0 0 40px 0;
