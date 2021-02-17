@@ -217,3 +217,18 @@ function showMore7() {
     document.getElementById('arrow-7').classList.toggle("arrow--down");
   }
 }
+
+function showMore8() {
+  let x = document.getElementById("fade-content-8").style;
+  if (x.maxHeight === "65px" || x.maxHeight === "") {
+    x.maxHeight = "none";
+    document.getElementById('fade-overlay-8').style.display = "none";
+    document.getElementById('arrow-8').classList.toggle("arrow--up");
+    document.getElementById('arrow-8').classList.toggle("arrow--down");
+  } else {
+    x.maxHeight = "65px";
+    document.getElementById('fade-overlay-8').style.display = "block";
+    document.getElementById('arrow-8').classList.toggle("arrow--up");
+    document.getElementById('arrow-8').classList.toggle("arrow--down");
+  }
+}
