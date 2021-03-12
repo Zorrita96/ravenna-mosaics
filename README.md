@@ -1,2 +1,4 @@
 # ravenna-mosaics
-A website for Matveyeva Julia's book
+A personal website for Julia Matveyeva
+https://matveyevajulia.art/
+https://matveyevajulia.art/en/
