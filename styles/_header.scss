@@ -36,7 +36,7 @@ header {
   } 
   
   .navbar__link {
-    color: white;
+    color: $golden;
     display: flex;
     height: 100%;
     width: 100%;
@@ -65,7 +65,7 @@ header {
   .dropdown__item {
     display: block;
     padding: 5px;
-    color: white;
+    color: $golden;
     &:hover {
       text-decoration: underline;
     }
@@ -93,7 +93,7 @@ header {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: $golden;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
